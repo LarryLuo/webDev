@@ -1,0 +1,22 @@
+/*body*/
+#container {width: 900px;margin: 0 auto;}
+/*header*/
+#header {height: 700px;background: #CCFFCC;margin-bottom: 8px;}
+#nav {height: 30px;background: #CCFFCC;margin-bottom: 8px;}
+
+/*upContent*/
+#upContent{margin-bottom: 8px;overflow: auto;zoom:1;}
+#news{float: left;width: 660px;height: 300px;background: #FFFF99;}
+#struct{float: right;width: 230px;height: 300px;background: #FFCC99;}
+
+/*downContent*/
+#downContent{margin-bottom: 8px;overflow: auto;zoom:1;}
+#pics{height: 500px;margin-bottom: 8px;background: #FFFF99;}
+#logos{height: 500px;margin-bottom: 8px;background: #FFCC99;}
+
+/*footer*/
+
+#footer{height: 70px;background: #CCFFCC;}
+
+/*clearfloat*/
+.clearfloat:{clear: both;height: 0;font-size: 1px;line-height: 0px;}
