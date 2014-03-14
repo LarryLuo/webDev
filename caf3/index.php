@@ -1,8 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtmm">
-	<?
-	include("set/conn.php");
-	?>
+
 	<head>
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 		<meta charset="UTF-8"/>
@@ -14,6 +12,9 @@
 		<title>caf3</title>
 	</head>
 	<body>
+		<?
+		include("set/conn.php");
+		?>
 		<div id="container">
 			<div id="banner">
 				this is the banner
