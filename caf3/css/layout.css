@@ -9,12 +9,7 @@
 /*upContent*/
 #upContent{margin-bottom: 8px;overflow: auto;zoom:1;}
 #news{float: left;width: 660px;height: 300px;background: #FFFF99;}
-#news ul{
-	height: 300px;width: 660px;
-}
-#news ul li{
-	height: 300px;width: 660px;
-}
+
 #struct{float: right;width: 230px;height: 300px;background: #FFCC99;}
 
 /*downContent*/

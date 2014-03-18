@@ -12,7 +12,7 @@
 		<title>caf3</title>
 	</head>
 	<body>
-		<?
+		<?php
 		include("set/conn.php");
 		?>
 		<div id="container">
@@ -63,7 +63,7 @@
 			<div id="upContent">
 				<div id="news">
 					<ul>
-						<?
+						<?php
 							$sql="SELECT * FROM news ORDER BY id DESC LIMIT 0,6";
 							$query=mysql_query($sql);
 							while ($row=mysql_fetch_array($query)) {
@@ -77,7 +77,9 @@
 								<?=$row['title']?>
 							</a>
 						</li>
-						<?}?>
+						<?php
+							}
+						?>
 					</ul>
 				</div>
 				<div id="struct">
