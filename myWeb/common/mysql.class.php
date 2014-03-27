@@ -36,6 +36,52 @@
 			return $query;
 		}
 
+		function show($message = '', $sql = ''){
+			if(!$sql) echo $message;
+			else echo $message.'<br>'.$sql;
+		}
+
+		function affected_rows(){
+			return mysql_affected_rows();
+		}
+
+		function result($query, $row){
+			return mysql_result($query,$row);
+		}
+
+		function num_rows($query){
+			return @mysql_num_fields($query);
+		}
+
+		function free_result($query){
+			return mysql_free_result($query);
+		}
+
+		function insert_id(){
+			return mysql_insert_id();
+		}
+
+		function fetch_row($query){
+			return mysql_fetch_row($query);
+		}
+
+		function version(){
+			return mysql_get_server_info();
+		}
+
+		function close(){
+			return mysql_close();
+		}
+
+		//==============
+
+		function fn_insert($table,$name,$value){
+			$this->query("insert into $table ($name) value($value)");
+		}
+
+
 		
 	}
+
+	$db = new mysql('localhost','root','910303Tt','myWeb',"GBK");
 ?>

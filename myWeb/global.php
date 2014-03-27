@@ -5,7 +5,7 @@ include_once ('./common/smarty/Smarty.class.php');
 include_once ('./common/mysql.class.php');
 include_once ('./common/action.class.php');
 
-$db = new action($mydbhost, $mydbuser,$mydbpw,$mydbname,ALL_PS,$mydbcharset);
+$db = new action($mydbhost,$mydbuser,$mydbpw,$mydbname,ALL_PS,$mydbcharset);
 
 
 //***********smarty************
