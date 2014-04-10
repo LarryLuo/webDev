@@ -65,6 +65,10 @@
 			return mysql_fetch_row($query);
 		}
 
+		function fetch_array($query){
+			return mysql_fetch_array($query);
+		}
+
 		function version(){
 			return mysql_get_server_info();
 		}
@@ -83,5 +87,5 @@
 		
 	}
 
-	$db = new mysql('localhost','root','910303Tt','myWeb',"GBK");
+
 ?>

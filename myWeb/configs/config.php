@@ -1,4 +1,5 @@
 <?php
+
 $mydbhost      = "localhost";      
 $mydbuser      = "root";
 $mydbpw        = "910303Tt";
