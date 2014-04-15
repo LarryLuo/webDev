@@ -16,14 +16,14 @@
 			<form action="" method="post">
 				<table border=0 cellspaciong=1 align=center class=form>
 					<tr>
-						<th colspan="2"> colspan2</th>
+						<th colspan="2">please login</th>
 					</tr>
 					<tr>
-						<td align="right"> alignright </td>
+						<td align="right"> name </td>
 						<td> <input type="text" name="username" value="" size="20" maxlength="40"/> </td>
 					</tr>
 					<tr>
-						<td align="right"> alignright2 </td>
+						<td align="right"> password </td>
 						<td><input type="password" name="password" value="" size="20" maxlength="40"/> </td>
 					</tr>
 					<tr>
