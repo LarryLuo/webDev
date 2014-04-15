@@ -3,7 +3,7 @@
 
 	<head>
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-		<meta charset="UTF-8"/>
+		<meta charset="gb2312"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" >
 		<link rel="stylesheet" type="text/css" href="css/grid.css" >
@@ -29,6 +29,9 @@
 		<title>caf3</title>
 	</head>
 	<body>
+		<?php
+		include("set/conn.php");
+		?>
 		<div id="container">
 			<div id="banner">
 				<div id="bannerButtons">
@@ -74,8 +77,26 @@
 
 				<div id="news">
 
-					<div id="newsLeft">
-						this is newsleft
+					<div class="newsLeft">
+						<ul>
+						<?php
+							$sql="SELECT * FROM p_newsbase ORDER BY id DESC LIMIT 0,8";
+							$query=mysql_query($sql);
+							while ($row=mysql_fetch_array($query)) {
+							
+						?>
+						<li>	
+							<a href="#">
+								<?=$row['title']?>
+							</a>
+							<span style="float:right">
+								<?=$row['date_time']?>
+							</span>
+						</li>
+						<?php
+							}
+						?>
+					</ul>
 					</div>
 
 					<div id="newsRight">
@@ -111,6 +132,26 @@
 
 
 					<div id="mediaDown">
+						<?php
+							$sql="SELECT * FROM p_media ORDER BY id DESC LIMIT 0,10";
+							$query=mysql_query($sql);
+							while ($row=mysql_fetch_array($query)) {
+							
+						?>
+
+						<div id="mediaPicArea">	
+							<div id="mediaPic">
+								<a href=" <?=$row['url']?> ">
+									<span style="position:absolute"><?=$row['title']?></span>
+									<img src=" <?=$row['sample']?> ">
+								</a>
+								
+							</div>
+						</div>
+
+						<?php
+							}
+						?>
 					</div>
 				</div>
 
@@ -137,7 +178,20 @@
 				<div class="clearfloat"></div>
 
 				<div id="partner">
-					partner
+					<?php
+						$sql="SELECT * FROM p_partner ORDER BY id DESC LIMIT 0,21";
+						$query=mysql_query($sql);
+						while ($row=mysql_fetch_array($query)) {
+							
+					?>
+					<div id="partnerLogo">	
+						<a href=" <?=$row['url']?> ">
+							<span style="position:absolute"><?=$row['name']?></span><img src=" <?=$row['image']?> ">
+						</a>
+					</div>
+					<?php
+						}
+					?>
 				</div>
 
 				<div class="clearfloat"></div>

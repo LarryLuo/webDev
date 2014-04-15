@@ -21,13 +21,17 @@
 #newsRight{width: 270px;height: 270px;float: right;margin-top: 230px;margin-right: 60px;}
 #newsButton{width:259px;height: 75px;float: none;margin-bottom: 20px;}
 
-#media{width: 960px;height: 530px;background: #F5EB00;}
+.newsLeft{width: 520px;height: 225px;background: #FFF;float: left;margin-top: 270px;margin-left: 60px;}
 
+
+#media{width: 960px;height: 600px;background: #F5EB00;}
 #mediaUp{height: 180px;margin-bottom: 40px;}
 #mediaUpLeft{width: 550px;height: 180px;background: url(images/video bg.png);float: left;margin-left: 45px;}
 #mediaUpRight{width: 277px;height:180px;background: url(images/video title.png) no-repeat;float: right;margin-top: 40px;margin-right: 45px;}
+#mediaDown{width: 906px;height: 360px;margin-left: 9px;margin-bottom: 8px;}
+#mediaPicArea{width: 145px;height: 154px;background: url(images/picture area.png);float: left;margin-left: 36px;margin-top: 21px;}
+#mediaPic{width:128px;height: 95px;background: #FFC1CC;float: left;margin-left: 8px;margin-top: 8px;}
 
-#mediaDown{width: 870px;height: 340px;margin-left: 45px;margin-bottom: 8px;}
 
 #contact{width:960px;height: 630px;background: url(images/contact bg.png) no-repeat;margin-bottom: 8px;}
 #contactLeft{width: 500px;float: left;margin-top: 150px;margin-left: 45px;}
@@ -40,13 +44,26 @@
 
 
 #partner{width: 870px;height: 275px;margin-left: 45px;}
-
+#partnerLogo{width: 100px;height: 56px;background: #F5EB00;float: left;margin-top: 20px;margin-right: 20px;}
 
 /*footer*/
 #footer{width: 1680px;height: 750px;background:url(images/bottom.png);}
 
 /*clearfloat*/
 .clearfloat:{clear: both;height: 0;font-size: 1px;line-height: 0px;}
+
+
+/*news style*/
+.newsLeft ul{ width: 500px;float: left;margin-left: 10px;}
+.newsLeft ul li{
+	font-size: 80%;
+	margin-top: 10px;
+	list-style-type: disc;
+	border-bottom: 1px #000 dashed;
+
+
+}
+
 
 nav,menu,ul,li{
 	margin: 0;
