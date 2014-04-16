@@ -9,25 +9,25 @@
 #content{width: 960px;background: #EBEBEB;margin-left: 359px;}
 
 /*navBar*/
-#nav {width:960px;height: 250px;background: #FFF ;}
+#nav {width:960px;height: 250px;background:url(images/exhibition_bg.png);}
 #navTitle{width: 870px;height: 63px; background: url(images/exhibiton title.png) no-repeat 0 0;margin-left: 45px;margin-bottom: 8px;}
 #navButtons{width:870px;height: 90px;margin-left: 45px;}
 #navButton{width: 263px;height:81px;float: left;margin-left: 27px; }
 
 
-#news{width:960px;height: 530px; background: url(images/news.png);}
-
-#newsLeft{width: 520px;height: 270px;float: left;margin-top:230px;margin-left: 60px;}
-#newsRight{width: 270px;height: 270px;float: right;margin-top: 230px;margin-right: 60px;}
+#news{width:960px;height: 412px; background: url(images/news_bg2.png);}
+#newsTitle{width: 550px;height: 65px;background: url(images/news title.png);float: left;margin-left: 45px;}
+#newsContent{width: 960px;height: 412px;float: left;}
+#newsRight{width: 270px;height: 270px;float: right;margin-top: 112px;margin-right: 60px;}
 #newsButton{width:259px;height: 75px;float: none;margin-bottom: 20px;}
 
-.newsLeft{width: 520px;height: 225px;background: #FFF;float: left;margin-top: 270px;margin-left: 60px;}
+.newsLeft{width: 520px;height: 225px;background: #FFF;float: left;margin-top: 152px;margin-left: 60px;}
 
 
-#media{width: 960px;height: 600px;background: #F5EB00;}
-#mediaUp{height: 180px;margin-bottom: 40px;}
+#media{width: 960px;height: 550px;background: #F5EB00;}
+#mediaUp{height: 180px;}
 #mediaUpLeft{width: 550px;height: 180px;background: url(images/video bg.png);float: left;margin-left: 45px;}
-#mediaUpRight{width: 277px;height:180px;background: url(images/video title.png) no-repeat;float: right;margin-top: 40px;margin-right: 45px;}
+#mediaUpRight{width: 277px;height:115px;background: url(images/video title.png) no-repeat;float: right;margin-top: 40px;margin-right: 45px;}
 #mediaDown{width: 906px;height: 360px;margin-left: 9px;margin-bottom: 8px;}
 #mediaPicArea{width: 145px;height: 154px;background: url(images/picture area.png);float: left;margin-left: 36px;margin-top: 21px;}
 #mediaPic{width:128px;height: 95px;background: #FFC1CC;float: left;margin-left: 8px;margin-top: 8px;}

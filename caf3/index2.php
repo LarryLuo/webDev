@@ -76,41 +76,42 @@
 				<div class="clearfloat"></div>
 
 				<div id="news">
-
-					<div class="newsLeft">
-						<ul>
-						<?php
-							$sql="SELECT * FROM p_newsbase ORDER BY id DESC LIMIT 0,8";
-							$query=mysql_query($sql);
-							while ($row=mysql_fetch_array($query)) {
+					<div class="clearfloat"></div>
+					<div id="newsContent">
+						<div class="newsLeft">
+							<ul>
+							<?php
+								$sql="SELECT * FROM p_newsbase ORDER BY id DESC LIMIT 0,8";
+								$query=mysql_query($sql);
+								while ($row=mysql_fetch_array($query)) {
 							
-						?>
-						<li>	
-							<a href="#">
-								<?=$row['title']?>
-							</a>
-							<span style="float:right">
-								<?=$row['date_time']?>
-							</span>
-						</li>
-						<?php
-							}
-						?>
-					</ul>
-					</div>
+							?>
+							<li>	
+								<a href="#">
+									<?=$row['title']?>
+								</a>
+								<span style="float:right">
+									<?=$row['date_time']?>
+								</span>
+							</li>
+							<?php
+								}
+							?>
+						</ul>
+						</div>
 
-					<div id="newsRight">
-						<div id="newsButton">
-							<a href="#"><img src="css/images/newsee_1 temp.png"></a>
-						</div>
-						<div id="newsButton">
-							<a href="#"><img src="css/images/newsee_2 temp.png"></a>
-						</div>
-						<div id="newsButton">
-							<a href="#"><img src="css/images/newsee_3 temp.png"></a>
+						<div id="newsRight">
+							<div id="newsButton">
+								<a href="#"><img src="css/images/newsee_1 temp.png"></a>
+							</div>
+							<div id="newsButton">
+								<a href="#"><img src="css/images/newsee_2 temp.png"></a>
+							</div>
+							<div id="newsButton">
+								<a href="#"><img src="css/images/newsee_3 temp.png"></a>
+							</div>
 						</div>
 					</div>
-
 				</div>
 
 				<div class="clearfloat"></div>
