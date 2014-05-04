@@ -21,6 +21,7 @@
 		<meta charset="gb2312"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="../prefix-free.js"></script>
+		<script src="../ckeditor/ckeditor.js"></script>
 		<title>newsupdate</title>
 	</head>
 	<body>
@@ -76,8 +77,18 @@
 				<tr>
 					<td width=80>text content</td>
 					<td>
-						<textarea type="text" name="content" style="width:280px;height:280px;">
+						<textarea class="ckeditor" name="content" rows="10" cols="80">
 						</textarea>
+						<script>
+							CKEDITOR.replace('content',{
+								filebrowserBrowseUrl:'../ckfinder/ckfinder.html',
+								filebrowserImageBrowseUrl:'../ckfinder/ckfinder.html?Type=Images',
+								filebrowserFlashBrowseUrl:'../ckfinder/ckfinder.html?Tyep=Flash',
+								filebrowserUploadUrl:'../ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+								filebrowserImageUploadUrl:'../ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+								filebrowserFlashUploadUrl:'../ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+							});
+						</script>
 					</td>
 				</tr>
 				
