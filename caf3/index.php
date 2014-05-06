@@ -169,6 +169,9 @@
 								<a href="<?=$row['url']?>" target="_blank">
 									<img src=" <?=$row['sample']?> ">
 								</a>
+								<span>
+									<?=$row['title']?>
+								</span>
 								
 							</div>
 						</div>

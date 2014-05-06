@@ -1,3 +1,10 @@
+/* welcome page*/
+#bg1{width: 1680px;height: 235px;background: url(images/welcome/body_1.png);}
+#bg2{width: 1680px;height: 296px;background: url(images/welcome/body_2.gif);}
+#bg3{width: 1680px;height: 239px;background: url(images/welcome/body_3.gif);}
+#bg4{width: 1680px;height: 175px;background: url(images/welcome/body_4.gif);}
+#welList{width: 618px;height: 101px;float: left;margin-left: 550px;}
+#welButton{width: 72px;height: 101px;margin-right: 31px;float: left;}
 /*body*/
 #container {width: 1680px;margin: 0 auto;}
 /*banner*/
@@ -31,7 +38,7 @@
 #mediaDown{width: 906px;height: 360px;margin-left: 9px;margin-bottom: 8px;}
 #mediaPicArea{width: 145px;height: 154px;background: url(images/picture area.png);float: left;margin-left: 36px;margin-top: 21px;}
 #mediaPic{width:128px;height: 95px;background: #FFC1CC;float: left;margin-left: 8px;margin-top: 8px;}
-
+#mediaPic span{font-size: 14px;}
 
 #contact{width:960px;height: 630px;background: url(images/contact bg.png) no-repeat;margin-bottom: 8px;}
 #contactLeft{width: 500px;float: left;margin-top: 150px;margin-left: 45px;}
@@ -69,6 +76,7 @@
 	border-bottom: 1px #000 dashed;
 	list-style-type: none;
 }
+.newsList ul li a:hover{color: red;}
 
 
 
