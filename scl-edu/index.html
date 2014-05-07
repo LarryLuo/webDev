@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<meta http-quiv="Content-Type" content="text/html; charset=gb2312">
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<script type="text/javascript" src="css/scripts/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="css/scripts/jquery.mousewheel.min.js"></script>		
+		<title>scl-edu</title>
+	</head>
+	
+	<body>
+		<script type="text/javascript">
+/*			var scrolling = false;
+			var scroll_num = 1;
+			var num=10;
+			var first = true;
+			$('html,body').bind('mousewheel',function(event,delta,deltaX,deltaY){
+				event.preventDefault();
+				if (scrolling == false) {
+					if(first == true){
+						var scroll_position = $(window).scrollTop() / $(window).height();
+						scroll_num = Math.floor(scroll_position) + 1;
+					}
+					scrolling = true;
+					if(delta == -1 && scroll_num + 1 <= num){
+						scroll_num++;
+						$("html,body").animate({scrollTop:(scroll_num -1)*$(window).height()},1000,function(){scrolling = false;});
+					}else if(delta == 1 && scroll_num -1 > 0){
+						scroll_num--;
+						$("html,body").animate({scrollTop:(scroll_num - 1)*$(window).height()},1000,function(){scrolling = false;});
+					}else{
+						scrolling = false;
+					}
+				};
+			
+			}); */
+			var absHeight = document.documentElement.clientHeight;
+			function scrollDown(){
+				scrollTo(0,document.documentElement.scrollTop + absHeight);
+			}
+			function scrollUp(){
+				scrollTo(0,document.documentElement.scrollTop - absHeight);
+			}
+			$('html,body').bind('mousewheel',function(event,delta){
+				if (delta > 0 ){
+				
+				}else if(delta < 0){
+					
+				}
+			});
+		</script>
+		<!-- navigation bar -->
+		<div id="navBar">
+			<div class="button1"></div>
+			<div class="button2"></div>
+			<div class="button3"></div>
+			<div class="button4"></div>
+		</div>
+		<!-- main box of index , contains 5 boxes -->
+		<!-- indexBox ,1button & 1animation-->
+		<div id="indexBox">
+			<div id="indexButton"></div>
+			<!-- arrow with animation-->
+			<div id="arrow"></div>
+		</div>
+		<!-- about us Box, 1button & 3 animation-->
+		<div id="aboutBox">
+			<div id="aboutButton"></div>
+			<!-- bus stop with animation -->
+			<div id="busStop"></div>
+			<!-- bus with animation-->
+			<div id="bus"></div>
+			<!-- line with animation-->
+			<div id="line"></div>
+		</div>
+		<!-- eduBox,1 button & 4 animation-->
+		<div id="eduBox">
+			<div id="eduButton"></div>
+			<!-- borad,ruler,words,children with animation-->
+			<div id="borad"></div>
+			<div id="ruler"></div>
+			<div id="words"></div>
+			<div id="children"></div>
+		</div>
+		<!-- infoBox,1 button & 2 animation-->
+		<div id="infoBox">
+			<div id="infoButton"></div>
+			<!-- cakehouse & building with animation-->
+			<div id="cake"></div>
+			<div id="building"></div>
+		</div>
+		<!-- joinBox,1 button & 2animation-->
+		<div id="joinBox">
+			<div id="joinButton"></div>
+			<!-- mailbox and blackboy with animation-->
+			<div id="mailbox"></div>
+			<div id="blackboy"></div>
+		</div>
+		<!-- the up to top button -->
+		<div id="topButton"></div>
+	</body>
+</html>

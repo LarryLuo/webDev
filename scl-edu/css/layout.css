@@ -1,0 +1,6 @@
+/* box style */
+#indexBox{height: 720px;width: 1920px;background: #f1b75c;}
+#aboutBox{height: 720px;width: 1920px;background: url(images/about_bg.jpg);}
+#eduBox{height: 720px;width: 1920px;background: url(images/edu_bg.jpg);}
+#infoBox{height: 720px;width: 1920px;background: url(images/info_bg.jpg);}
+#joinBox{height: 720px;width: 1920px;background: url(images/join_bg.jpg);}
