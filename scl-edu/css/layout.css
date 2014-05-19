@@ -1,4 +1,5 @@
 /* box style */
+body{margin:0 0;}
 #indexBox{height: 720px;width: 1920px;background: #f1b75c;}
 #aboutBox{height: 720px;width: 1920px;background: url(images/about_bg.jpg);}
 #eduBox{height: 720px;width: 1920px;background: url(images/edu_bg.jpg);}
