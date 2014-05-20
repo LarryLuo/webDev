@@ -27,16 +27,14 @@ $(window).bind('scroll',function(e){
 	$('#userAgent').html(navigator.userAgent);
 
 	var scrolled = $(window).scrollTop();
-		$('#navBar')
+/*		$('#navBar')
 			.mousewheel(function(event,delta,deltaX,deltaY){
 				pset1=0;
 				isu=0;
 				if(pset0==0){
-					$('#bg1-ren').hide();
-					$('#p1_ren2').show();
 						if(delta < 0){
 							/*to page 1*/
-							to1();					
+/*							to1();					
 						}else if (delta > 0){
 							isu = 1;
 						}
@@ -56,8 +54,8 @@ $(window).bind('scroll',function(e){
 				if(isu==0){
 					pset0++;
 				}
-			});//end $header
-		$('#indexBox')
+			}); //end $header 
+*/		$('#indexBox')
 			.mousewheel(function(event, delta, deltaX, deltaY){
 				pset0=0;pset2=0;
 				isu=0;
@@ -193,7 +191,7 @@ $(window).bind('scroll',function(e){
 						}
 					}
 				}else{
-					var $this = %(this),
+					var $this = $(this),
 						timeoutId = $this.data('timeoutId');
 					if(timeoutId){
 						clearTimeout(timeoutId);
@@ -225,7 +223,7 @@ $(window).bind('scroll',function(e){
 					if(onpage==4){
 						to5();
 						onpage=5;
-
+						
 					}else if(onpage==3){
 						to4();
 						onpage=4;
@@ -256,7 +254,7 @@ function to0(){
 	pset0=0;pset1=0;
 	moving=1;
 		$('html,body').animate({
-			scrollTop:$('#header').offset().top
+			scrollTop:$('#navBar').offset().top
 		},720,function(){
 			moving=0;
 		} );
@@ -265,7 +263,7 @@ function to0(){
 function to1(){
 	moving=1;
 		$('html,body').animate({
-			scrollTop:$('#page1box').offset().top
+			scrollTop:$('#indexBox').offset().top
 		},720,function(){
 			moving=0;
 		});
@@ -274,7 +272,7 @@ function to1(){
 function to2(){
 	moving=1;
 		$('html,body').animate({
-			scrollTop:$('#page3box').offset().top
+			scrollTop:$('#aboutBox').offset().top
 		},720 ,function(){
 			moving=0;
 		});
@@ -283,7 +281,7 @@ function to2(){
 function to3(){
 	moving=1;
 		$('html,body').animate({
-			scrollTop:$('#page3box').offset().top
+			scrollTop:$('#eduBox').offset().top
 		},720 ,function(){
 			moving=0;
 		});
@@ -292,8 +290,19 @@ function to3(){
 function to4(){
 	moving=1;
 		$('html,body').animate({
-			scrollTop:$('#page4box').offset().top
-		},720 ,function());
+			scrollTop:$('#infoBox').offset().top
+		},720 ,function() {
+			moving=0;
+		});
+}
+
+function to5(){
+	moving=1;
+		$('html,body').animate({
+			scrollTop:$('#joinBox').offset().top
+		},720 ,function() {
+
+		});
 }
 
 	$("div.returnTop").click(function(){
