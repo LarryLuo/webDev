@@ -11,7 +11,7 @@
 	<body>
 	
 		<!-- navigation bar -->
-		<div id="navBar" style="background: #a66d26">
+		<div id="topToolbar">
 			<div id="navLogo"></div>
 			<div class="navButton" style="background:url(css/images/aboutButton.png) no-repeat" >
 				<div class="navSelected"></div>
@@ -25,7 +25,6 @@
 			<div class="navButton" style="background:url(css/images/joinButton.png) no-repeat" >
 				<div class="navSelected"></div>
 			</div>
-
 		</div>
 		<!-- main box of index , contains 5 boxes -->
 		<!-- indexBox ,1button & 1animation-->

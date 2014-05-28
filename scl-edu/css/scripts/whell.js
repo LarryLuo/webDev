@@ -312,4 +312,17 @@ function to5(){
 	});
 });//end window bind
 
+	$(window).scroll(function(){
+		var topToolbar = $("#topToolbar");
+		var headerH = $("#header").outerHeight();
+		var scrollTop = $(document).scrollTop();
+
+			if(scrollTop >=headerH){
+				topToolbar.css('top:0');
+			}else if(scrollTop < headerH){
+				topToolbar.css('top:-60');
+			}
+		
+	});
+
 });//end function

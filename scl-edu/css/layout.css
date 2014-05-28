@@ -1,18 +1,35 @@
 /* box style */
-body{margin:0 0;}
+body{width: 1920px;margin:0 0;}
 #indexBox{height: 720px;width: 1920px;background: #f1b75c;}
 #aboutBox{height: 720px;width: 1920px;background: url(images/about_bg.jpg);}
 #eduBox{height: 720px;width: 1920px;background: url(images/edu_bg.jpg);}
 #infoBox{height: 720px;width: 1920px;background: url(images/info_bg.jpg);}
 #joinBox{height: 720px;width: 1920px;background: url(images/join_bg.jpg);}
 
-/* navagation bar style */
+/* navagation bar style for wrapper.php */
 #navBar{height: 60px;width: 1920px;background: #f4db5e;float: left;}
 #navLogo{height: 44px;width: 219px;background: url(images/logo.png);margin-top: 8px;margin-left: 380px;margin-right: 100px;float: left;}
 .navButton{height: 29px;width: 103px;margin-top:15px;margin-right: 60px;float: left;}
 .navSelected{display: none;}
-.navButton:hover .navSelected{display: block;width: 103px;height: 29px;background: url(images/selected.png);}
+.navButton:hover .navSelected{
+	display: block;
+	width: 103px;
+	height: 29px;
+	background: url(images/selected.png);
+	}
 
+/* top tool bar for index.html */
+#topToolbar{
+	_display:none;
+	width: 100%;height: 60px;line-height: 40px;
+	background: #101010;
+	position: fixed;top: 0px;left: 0; _top:0;
+	_position:absolute; _top:expression(documentElement.scrollTop);
+	z-index: 1;
+	filter:alpha(Opacity=80);
+	-moz-opacity:0.5;
+	opacity: 0.5;
+}
 /* elements in indexBox*/
 #indexLogo{height:271px;width: 314px;background: url(images/indexLogo.png);position: absolute;top: 190px;left: 550px; }
 #indexWheel{height: 102px;width: 26px;background: url(images/indexWheel.png);position: absolute;top: 480px;left: 700px;}
