@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery浮动在顶部或底部固定浮动横幅导航条菜单</title>
+<style type="text/css">
+/* 全局CSS*/
+*{margin:0px; padding:0px;}
+a{ text-decoration:none; outline:none;}
+a:hover{text-decoration:underline;}
+/* 实例CSS */
+html{ _background:url(about:blank);} /*阻止闪动 in IE6 , 把空文件换成about:blank , 减少请求*/
+body{ font-size:12px; font-family:Arial,Tahoma,sans-serif; color:#EEEEEE; text-align:center; background:#E2E2E2;}
+#topToolbar{
+_display:none;
+width:100%; height:40px; line-height:40px;
+background:#101010; border-bottom:2px solid #409F89;
+position:fixed; top:-40px; left:0; _top:0;
+_position:absolute; _top:expression(documentElement.scrollTop);
+}
+#bottomToolbar{
+width:100%; height:40px; line-height:40px;
+background:#101010; border-top:2px solid #409F89;
+position:fixed; bottom:0; left:0;
+_position:absolute; _top:expression(documentElement.scrollTop+documentElement.clientHeight-this.offsetHeight);
+/*
+document.body.scrollTop 网页滚动的距离
+document.body.clientHeight 网页可见区域高
+this.offsetHeight 当前元素的高度
+*/
+}
+#bottomToolbar a{ color:#FFF;}
+#header{
+width:100%; height:80px; line-height:80px;
+background:#101010; border-top:2px solid #409F89;
+}
+#content{
+width:880px; height:1390px; line-height:18px; text-align:left;
+margin:40px auto 80px auto; padding:30px 50px;
+background:#FFF url(images/scaleplate.png) no-repeat; border:1px solid #CCC;
+}
+#content h1{ font-size:22px; color:#000; margin-bottom:30px;}
+#content p{ margin-bottom:18px; color:#5A5A5A;}
+#content a{ color:#409F89;}
+</style>
+<script type="text/javascript"src="jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+$(window).scroll(function() {
+var topToolbar = $(“#topToolbar”);
+var headerH = $(“#header”).outerHeight();
+var scrollTop = $(document).scrollTop();
+if ($.browser.msie && ($.browser.version == “6.0″) && !$.support.style) {
+if( scrollTop >= headerH ){
+topToolbar.show();
+}else if( scrollTop < headerH ){
+topToolbar.hide();
+}
+}else{
+if( scrollTop >= headerH ){
+topToolbar.css({ ‘top’:0 });
+}else if( scrollTop < headerH ){
+topToolbar.css({ ‘top’:-40 });
+}
+};
+});
+});
+</script>
+</head>
+<body>
+<div id="header">Default header. No absolute and fixed.</div>
+<div id="topToolbar">Fixed at the top of the Toolbar.</div>
+<div id="content">
+
+</div>
+</body>
+</html>

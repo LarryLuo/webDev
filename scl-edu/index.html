@@ -9,52 +9,23 @@
 	</head>
 	
 	<body>
-		<!-- script type="text/javascript">
-/*			var scrolling = false;
-			var scroll_num = 1;
-			var num=10;
-			var first = true;
-			$('html,body').bind('mousewheel',function(event,delta,deltaX,deltaY){
-				event.preventDefault();
-				if (scrolling == false) {
-					if(first == true){
-						var scroll_position = $(window).scrollTop() / $(window).height();
-						scroll_num = Math.floor(scroll_position) + 1;
-					}
-					scrolling = true;
-					if(delta == -1 && scroll_num + 1 <= num){
-						scroll_num++;
-						$("html,body").animate({scrollTop:(scroll_num -1)*$(window).height()},1000,function(){scrolling = false;});
-					}else if(delta == 1 && scroll_num -1 > 0){
-						scroll_num--;
-						$("html,body").animate({scrollTop:(scroll_num - 1)*$(window).height()},1000,function(){scrolling = false;});
-					}else{
-						scrolling = false;
-					}
-				};
-			
-			}); */
-			var absHeight = document.documentElement.clientHeight;
-			function scrollDown(){
-				scrollTo(0,document.documentElement.scrollTop + absHeight);
-			}
-			function scrollUp(){
-				scrollTo(0,document.documentElement.scrollTop - absHeight);
-			}
-			$('html,body').bind('mousewheel',function(event,delta){
-				if (delta > 0 ){
-				
-				}else if(delta < 0){
-					
-				}
-			});
-		</script -->
+	
 		<!-- navigation bar -->
-		<div id="navBar">
-			<div class="button1"></div>
-			<div class="button2"></div>
-			<div class="button3"></div>
-			<div class="button4"></div>
+		<div id="navBar" style="background: #a66d26">
+			<div id="navLogo"></div>
+			<div class="navButton" style="background:url(css/images/aboutButton.png) no-repeat" >
+				<div class="navSelected"></div>
+			</div>
+			<div class="navButton" style="background:url(css/images/eduButton.png) no-repeat" >
+				<div class="navSelected"></div>
+			</div>
+			<div class="navButton" style="background:url(css/images/infoButton.png) no-repeat" >
+				<div class="navSelected"></div>
+			</div>
+			<div class="navButton" style="background:url(css/images/joinButton.png) no-repeat" >
+				<div class="navSelected"></div>
+			</div>
+
 		</div>
 		<!-- main box of index , contains 5 boxes -->
 		<!-- indexBox ,1button & 1animation-->

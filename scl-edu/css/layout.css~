@@ -6,13 +6,6 @@ body{margin:0 0;}
 #infoBox{height: 720px;width: 1920px;background: url(images/info_bg.jpg);}
 #joinBox{height: 720px;width: 1920px;background: url(images/join_bg.jpg);}
 
-/* navagation bar style */
-#navBar{height: 60px;width: 1920px;background: #f4db5e;float: left;}
-#navLogo{height: 44px;width: 219px;background: url(images/logo.png);margin-top: 8px;margin-left: 380px;margin-right: 100px;float: left;}
-.navButton{height: 29px;width: 103px;margin-top:15px;margin-right: 60px;float: left;}
-.navSelected{display: none;}
-.navButton:hover .navSelected{display: block;width: 103px;height: 29px;background: url(images/selected.png);}
-
 /* elements in indexBox*/
 #indexLogo{height:271px;width: 314px;background: url(images/indexLogo.png);position: absolute;top: 190px;left: 550px; }
 #indexWheel{height: 102px;width: 26px;background: url(images/indexWheel.png);position: absolute;top: 480px;left: 700px;}
@@ -52,11 +45,12 @@ body{margin:0 0;}
 #wLeft{height: 500px;width: 191px;float: left;}
 #wRight{height: 500px;width: 700px;float: right;background: #EBEBEB}
 #wTitle{height: 90px;width: 166px;margin-left: 12px;}
-#wButton{height: 191px;width: 191px;margin-top: 50px;}
+#wButton{height: 191px;width: 191px;}
 #wBottom{height: 282px;width: 1920px;float: left;margin-top: 50px;}
-/* styles of left menu list */
+
+
 .wMenu{height:auto;width: 191px;min-height: 150px;}
-.wMenu ul {list-style-type: circle;color: #9b5b0c;}
-.wMenu ul li {margin-top: 0.5rem;}
-.wMenu ul li a {text-decoration: none;color: #9b5b0c;font-size: 20px;font-family:"Î¢ÈíÑÅºÚ","ºÚÌå","ËÎÌå"}
+.wMenu ul {list-style-type: none;}
+.wMenu ul li {margin-top: 1rem;}
+.wMenu ul li a {text-decoration: none;color: #9b5b0c;font-size: 24px;font-family:"ºÚÌå","ËÎÌå"}
 .wMenu ul li a:hover{text-decoration: underline;}
