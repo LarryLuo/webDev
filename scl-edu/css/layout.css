@@ -1,5 +1,5 @@
 /* box style */
-body{width: 1920px;margin:0 0;}
+body{width: 1920px;margin:0 0;font-family:"Î¢ÈíÑÅºÚ","ºÚÌå","ËÎÌå"}
 #indexBox{height: 720px;width: 1920px;background: #f1b75c;}
 #aboutBox{height: 720px;width: 1920px;background: url(images/about_bg.jpg);}
 #eduBox{height: 720px;width: 1920px;background: url(images/edu_bg.jpg);}
@@ -65,9 +65,9 @@ body{width: 1920px;margin:0 0;}
 
 /* elements of wrapper */
 #wBanner{height: 311px;width: 1920px;float: left;}
-#wContent{height: 500px;width: 940px;float: left;margin-left: 380px;margin-top: 50px;}
-#wLeft{height: 500px;width: 191px;float: left;}
-#wRight{height: 500px;width: 700px;float: right;background: #EBEBEB}
+#wContent{height: 660px;width: 940px;float: left;margin-left: 380px;margin-top: 50px;}
+#wLeft{height: 660px;width: 191px;float: left;}
+#wRight{height: 660px;width: 700px;float: right;}
 #wTitle{height: 90px;width: 166px;margin-left: 12px;}
 #wButton{height: 191px;width: 191px;margin-top: 50px;}
 #wBottom{height: 282px;width: 1920px;float: left;margin-top: 50px;}
@@ -77,3 +77,18 @@ body{width: 1920px;margin:0 0;}
 .wMenu ul li {margin-top: 0.5rem;}
 .wMenu ul li a {text-decoration: none;color: #9b5b0c;font-size: 20px;font-family:"Î¢ÈíÑÅºÚ","ºÚÌå","ËÎÌå"}
 .wMenu ul li a:hover{text-decoration: underline;}
+
+/* style of news list */
+#newsList{height: 590px;width: 700px;}
+#newsColum{height: 95px;width: 700px;float: left;border-bottom: 2px solid #A66D25;line-height: 25px;}
+#newsTitle{ margin-top: 15px;}
+#newsTitle a{font-size: 23px;text-decoration: none;color: #A66D25;}
+#newsBrief {margin-top: 10px;color: #9D9D9D}
+#newsBrief p{ margin: 0;font-size: 14px;}
+/* style of page buttons */
+#wPagebottom{height: 43px;width: 700px;text-align: center;margin-top: 20px;}
+#wPagebox{display: inline-block;}
+#wPageup{height: 28px;width: 14px;background: url(images/info_Right.png);float: left;margin-top: 8px;}
+#wPagedown{height: 28px;width: 14px;background: url(images/info_Left.png);float: left;margin-left: 25px;margin-top: 8px;}
+#wPagenum{height: 43px;width: 43px;background: url(images/info_Num.png);float: left;margin-left: 25px;}
+#wPagenum a{color: #FFF;text-decoration: none;font-weight: bolder;font-size: 38px;font-family:courier;padding-left: 2px;}

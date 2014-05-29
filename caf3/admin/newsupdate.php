@@ -3,7 +3,7 @@
 
 	if(isset($_POST[into_news])){
 		$base_sql="INSERT INTO `p_newsbase` (`id`,`cid`,`title`,`author`,`date_time`)" . 
-			"VALUES (NULL,'$_POST[cid]','$_POST[title]','$_POST[author]',now())";
+			"VALUES (NULL,0,'$_POST[title]','$_POST[author]',now())";
 		mysql_query($base_sql);
 		$last_id=mysql_insert_id();
 		$content_sql="INSERT INTO `p_newscontent` (`nid`,`keyword`,`content`,`remark`)" .
