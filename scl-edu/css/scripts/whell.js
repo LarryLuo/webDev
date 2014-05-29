@@ -66,6 +66,7 @@ $(window).bind('scroll',function(e){
 						//go down
 						to2();//go to page 2
 						onpage=2;//set page = 2
+						aboutBoxIn();
 					}  
 				}else{
 					var $this = $(this),
@@ -92,14 +93,18 @@ $(window).bind('scroll',function(e){
 						//go to page 1
 						to1();
 						onpage=1;
+						aboutBoxOut();
 					}else if (delta <0){
 						//go down
 						if(onpage==1){
 							to2();
 							onpage=2;
+							aboutBoxIn();
 						}else{
 							to3();
 							onpage=3;
+							aboutBoxOut();
+							eduBoxIn();
 						}
 
 					}
@@ -127,23 +132,29 @@ $(window).bind('scroll',function(e){
 						if(onpage==2){
 							to1();
 							onpage=1;
+							aboutBoxOut();
 						}else{
 							to2();
 							onpage=2;
+							aboutBoxIn();
+							eduBoxOut();
 						}
 					}else if(delta <0){
 					//wheel down
 						if(onpage==2){
 							to3();
 							onpage=3;
-
+							aboutBoxOut();
+							eduBoxIn();
 						}else if(onpage==1){
 							to2();
 							onpage=2;
-
+							aboutBoxIn();
 						}else{
 							to4();
 							onpage=4;
+							eduBoxOut();
+							infoBoxIn();
 						}
 					}
 				}else{
@@ -169,25 +180,36 @@ $(window).bind('scroll',function(e){
 						if(onpage==3){
 							to2();
 							onpage=2;
+							aboutBoxIn();
+							eduBoxOut();
 						}else if(onpage==5){
 							to4();
 							onpage=4;
+							infoBoxIn();
+							joinBoxOut();
 						}else{
 							to3();
 							onpage=3;
+							eduBoxIn();
+							infoBoxOut();
 						}
 					}else if(delta < 0){
 						if(onpage==3){
 							to4();
 							onpage=4;
+							eduBoxOut();
+							infoBoxIn();
 
 						}else if(onpage==2){
 							to3();
 							onpage=3;
-
+							aboutBoxOut();
+							eduBoxIn();
 						}else{
 							to5();
 							onpage=5;
+							infoBoxOut();
+							joinBoxIn();
 						}
 					}
 				}else{
@@ -215,19 +237,25 @@ $(window).bind('scroll',function(e){
 					if(onpage==4){
 						to3();
 						onpage=3;
+						eduBoxIn();
+						infoBoxOut();
 					}else{
 						to4();
 						onpage=4;
+						infoBoxIn();
+						joinBoxOut();
 					}
 				}else if(delta < 0){
 					if(onpage==4){
 						to5();
 						onpage=5;
-						
+						infoBoxOut();
+						joinBoxIn();
 					}else if(onpage==3){
 						to4();
 						onpage=4;
-				
+						eduBoxOut();
+						infoBoxIn();
 					}else{
 						isu=1;
 					}
@@ -310,6 +338,72 @@ function to5(){
 		onpage=1;pset0=0;pset1=0;pset3=0;pset2=0;
 		return false;
 	});
+
+/* functions of animation */
+
+function aboutBoxIn(){
+	/* animation of aboutBox in*/
+	$('#aboutStop').animate({top:'250px'},1500);
+	$('#aboutTitle').animate({top:'120px'},1500);
+	$('#aboutBus').animate({left:'750px'},1500);
+	$('#aboutCloud1').animate({top:'150px',left:'300px'},1500);
+	$('#aboutCloud2').animate({top:'100px',left:'800px'},1500);
+}
+function aboutBoxOut(){
+	/* animation of aboutBox out*/
+	$('#aboutStop').animate({top:'300px'},1500);
+	$('#aboutTitle').animate({top:'80px'},1500);
+	$('#aboutBus').animate({left:'1050px'},1500);
+	$('#aboutCloud1').animate({top:'100px',left:'200px'},1500);
+	$('#aboutCloud2').animate({top:'50px',left:'1200px'},1500);
+}
+function eduBoxIn(){
+	$('#eduTitle').animate({top:'170px'},1500);
+	$('#eduBoard').animate({left:'300px'},1500);
+	$('#eduCube').animate({top:'380px'},1500);
+	$('#eduRuler').animate({top:'60px',left:'1100px'},1500);
+	$('#eduStudents').animate({top:'643px'},1500);
+	$('#eduTeacher').animate({left:'400px'},1500);
+}
+function eduBoxOut(){
+	$('#eduTitle').animate({top:'120px'},1500);
+	$('#eduBoard').animate({top:'100px'},1500);
+	$('#eduCube').animate({top:'450px'},1500);
+	$('#eduRuler').animate({top:'10px',left:'1300px'},1500);
+	$('#eduStudents').animate({top:'700px'},1500);
+	$('#eduTeacher').animate({left:'600px'},1500);
+}
+function infoBoxIn(){
+	$('#infoBuilding').animate({left:'1100px'},1500);
+	$('#infoFood').animate({top:'150px'},1500);
+	$('#infoGirl').animate({left:'440px'},1500);
+	$('#infoPlay').animate({left:'1050px'},1500);
+	$('#infoShop').animate({left:'250px'},1500);
+	$('#infoTitle').animate({top:'170px'},1500);
+}
+function infoBoxOut(){
+	$('#infoBuilding').animate({left:'1300px'},1500);
+	$('#infoFood').animate({top:'120px'},1500);
+	$('#infoGirl').animate({left:'500px'},1500);
+	$('#infoPlay').animate({left:'950px'},1500);
+	$('#infoShop').animate({left:'200px'},1500);
+	$('#infoTitle').animate({top:'120px'},1500);
+}
+function joinBoxIn(){
+	$('#joinCloud').animate({top:'100px',left:'300px'},1500);
+	$('#joinMail1').animate({left:'600px'},1500);
+	$('#joinMail2').animate({left:'492px'},1500);
+	$('#joinTitle').animate({top:'120px'},1500);
+	$('#joinBoy').animate({left:'1150px'},1500);
+}
+function joinBoxOut(){
+	$('#joinCloud').animate({top:'50px',left:'200px'},1500);
+	$('#joinMail1').animate({left:'550px'},1500);
+	$('#joinMail2').animate({left:'540px'},1500);
+	$('#joinTitle').animate({top:'70px'},1500);
+	$('#joinBoy').animate({left:'1050px'},1500);
+}
+
 });//end window bind
 
 	$(window).scroll(function(){

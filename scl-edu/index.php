@@ -52,6 +52,7 @@
 			<div id="aboutCloud1"></div>
 			<div id="aboutCloud2"></div>
 			<div id="aboutCloud3"></div>
+			<div id="aboutLine"></div>
 			</div>
 		</div>
 		<!-- eduBox,1 button & 4 animation-->
@@ -86,6 +87,7 @@
 			<div id="joinMail1"></div>
 			<div id="joinMail2"></div>
 			<div id="joinCloud"></div>
+			<div id="joinBoy"></div>
 			</div>
 		</div>
 		<!-- the up to top button -->
