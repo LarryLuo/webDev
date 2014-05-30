@@ -404,17 +404,27 @@ function joinBoxOut(){
 	$('#joinBoy').animate({left:'1050px'},1500);
 }
 
+		// 点击按钮后，滚动条的垂直方向的值逐渐变为0，也就是滑动向上的效果
+		$("#returnTop").click(function() {
+			window.scrollTo(0,0);
+			onpage=1;pset0=0;pset1=0;pset3=0;pset2=0;
+			return false;
+		});
+
 });//end window bind
 
 	$(window).scroll(function(){
 		var topToolbar = $("#topToolbar");
+		var returnTop = $("#returnTop");
 		var headerH = $("#header").outerHeight();
 		var scrollTop = $(document).scrollTop();
 
 			if(scrollTop >=headerH){
 				topToolbar.css('top:0');
+				returnTop.css('bottom:30');
 			}else if(scrollTop < headerH){
 				topToolbar.css('top:-60');
+				returnTop.css('bottom:-40');
 			}
 		
 	});

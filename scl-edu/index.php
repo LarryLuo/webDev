@@ -7,7 +7,7 @@
 		<script type="text/javascript" src="css/scripts/whell.js"></script>
 		<script type="text/javascript">
 			function Page_jump(str){
-				window.location = "http://192.168.1.142/scl-edu/wrapper.php?"+str;
+				window.location = "http://www.cdcaf.com/scl-edu/wrapper.php?"+str;
 			}
 		</script>
 		<title>scl-edu</title>
@@ -17,7 +17,7 @@
 	
 		<!-- navigation bar -->
 		<div id="topToolbar">
-			<div id="navLogo" onClick="window.location = 'http://192.168.1.142/scl-edu'"></div>
+			<div id="navLogo" onClick="window.location = 'http://www.cdcaf.com/scl-edu'"></div>
 			<div class="navButton" style="background:url(css/images/aboutButton.png) no-repeat" >
 				<div class="navSelected" onClick="Page_jump('mid=1&sid=1')"></div>
 			</div>
@@ -30,6 +30,11 @@
 			<div class="navButton" style="background:url(css/images/joinButton.png) no-repeat" >
 				<div class="navSelected" onClick="Page_jump('mid=4&sid=11')"></div>
 			</div>
+		</div>
+
+
+		<div id="returnTop">
+			<img src="css/images/top_01.png" onmouseover="this.src='css/images/top_02.png'" onmouseout="this.src='css/images/top_01.png'" />
 		</div>
 		<!-- main box of index , contains 5 boxes -->
 		<!-- indexBox ,1button & 1animation-->
@@ -91,6 +96,5 @@
 			</div>
 		</div>
 		<!-- the up to top button -->
-		<div id="topButton"></div>
 	</body>
 </html>

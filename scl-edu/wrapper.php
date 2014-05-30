@@ -5,13 +5,19 @@
 		<script type="text/javascript" src="css/scripts/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript">
 			function Page_jump(str){
-				window.location = "http://192.168.1.142/scl-edu/wrapper.php?"+str;
+				window.location = "http://www.cdcaf.com/scl-edu/wrapper.php?"+str;
+			}
+		</script>
+		<script type="text/javascript">
+			function resize(){
+				var cHeight = $("#wRight").height() + 'px';
+				document.getElementById("wContent").style.height = cHeight;
 			}
 		</script>
 		<title>scl-edu</title>
 	</head>
 	
-	<body>
+	<body onload="resize()">
 		<?php
 			include ("admin/conn.php");
 			$mid=$_REQUEST["mid"];
@@ -36,7 +42,7 @@
 			}
 		?>
 		<div id="navBar">
-			<div id="navLogo" onClick="window.location = 'http://192.168.1.142/scl-edu'"></div>
+			<div id="navLogo" onClick="window.location = 'http://www.cdcaf.com/scl-edu'"></div>
 			<div class="navButton" style="background:url(css/images/aboutButton.png) no-repeat" >
 				<div class="navSelected" onClick="Page_jump('mid=1&sid=1')"></div>
 			</div>
@@ -64,7 +70,7 @@
 							while ($row=mysql_fetch_array($query)){
 						?>
 						<li>
-							<a href="wrapper.php?mid=<?=$row[mid]?>&sid=<?=$row[id]?>">
+							<a href="wrapper.php?mid=<?=$row[mid]?>&sid=<?=$row[id]?>&pageno=1">
 								<?=$row['name']?>
 							</a>
 						</li>
