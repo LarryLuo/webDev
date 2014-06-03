@@ -51,13 +51,13 @@
 			<div id="aboutTitle" onClick="Page_jump('mid=1&sid=1')"></div>
 			<!-- bus stop with animation -->
 			<div id="aboutStop"></div>
-			<!-- bus with animation-->
-			<div id="aboutBus"></div>
 			<!-- clouds with animation-->
 			<div id="aboutCloud1"></div>
 			<div id="aboutCloud2"></div>
 			<div id="aboutCloud3"></div>
 			<div id="aboutLine"></div>
+			<!-- bus with animation-->
+			<div id="aboutBus"></div>
 			</div>
 		</div>
 		<!-- eduBox,1 button & 4 animation-->

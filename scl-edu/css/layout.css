@@ -9,7 +9,7 @@ body{width: 1920px;margin:0 0;font-family:"Î¢ÈíÑÅºÚ","ºÚÌå","ËÎÌå"}
 /* navagation bar style for wrapper.php */
 #navBar{height: 60px;width: 1920px;background: #f4db5e;float: left;}
 #navLogo{height: 44px;width: 219px;background: url(images/logo.png);margin-top: 8px;margin-left: 380px;margin-right: 100px;float: left;}
-.navButton{height: 29px;width: 103px;margin-top:15px;margin-right: 60px;float: left;}
+.navButton{height: 29px;width: 103px;margin-top:15px;margin-right: 60px;float: left;display: block;}
 .navSelected{display: none;}
 .navButton:hover .navSelected{
 	display: block;
@@ -21,7 +21,7 @@ body{width: 1920px;margin:0 0;font-family:"Î¢ÈíÑÅºÚ","ºÚÌå","ËÎÌå"}
 /* top tool bar for index.html */
 #topToolbar{
 	_display:none;
-	width: 100%;height: 60px;line-height: 40px;
+	width: 1920px;height: 60px;line-height: 40px;
 	background: #101010;
 	position: fixed;top: 0px;left: 0; _top:0;
 	_position:absolute; _top:expression(documentElement.scrollTop);
@@ -36,8 +36,8 @@ body{width: 1920px;margin:0 0;font-family:"Î¢ÈíÑÅºÚ","ºÚÌå","ËÎÌå"}
 
 /* elements in aboutBox*/
 #aboutTitle{height: 215px;width: 190px;background: url(images/aboutTitle.png);position: absolute;top: 80px;left: 625px;}
-#aboutStop{height: 280px;width: 125px;background: url(images/aboutStop.png);position: absolute;top: 300px;left: 250px;}
-#aboutBus{height: 298px;width: 499px;background: url(images/aboutBus.gif);position: absolute;top: 330px;left: 1050px;}
+#aboutStop{height: 280px;width: 125px;background: url(images/aboutStop.png);position: absolute;top: 250px;left: 250px;}
+#aboutBus{height: 298px;width: 499px;background: url(images/aboutBus.gif);position: absolute;top: 330px;left: 1920px;}
 #aboutCloud1{height:134px; width: 242px;background: url(images/aboutCloud1.png);position: absolute;top: 100px;left: 200px;}
 #aboutCloud2{height: 145px;width: 338px;background: url(images/aboutCloud2.png);position: absolute;top: 50px;left: 1200px;}
 #aboutTree{height: 180px;width:704px;background: url(images/aboutTree.png);position: absolute;top:100px ;left:100px ; }
@@ -45,11 +45,11 @@ body{width: 1920px;margin:0 0;font-family:"Î¢ÈíÑÅºÚ","ºÚÌå","ËÎÌå"}
 
 /* elements in eduBox*/
 #eduTitle{height: 215px;width: 190px;background: url(images/eduTitle.png);position: absolute;top: 120px;left: 810px;}
-#eduBoard{height: 390px;width: 461px;background: url(images/eduBoard.png);position: absolute;top: 130px;left: 100px;}
-#eduCube{height: 190px;width: 229px;background: url(images/eduCube.png);position: absolute;top: 450px;left: 1000px;}
+#eduBoard{height: 390px;width: 461px;background: url(images/eduBoard.png);position: absolute;top: 130px;left: 200px;}
+#eduCube{height: 190px;width: 229px;background: url(images/eduCube.png);position: absolute;top: 380px;left: 1100px;}
 #eduRuler{height: 265px;width: 197px;background: url(images/eduRuler.png);position: absolute;top: 10px;left: 1300px;}
-#eduStudents{height: 77px;width: 654px;background: url(images/eduStudents.png);position: absolute;top: 700px;left:400px;}
-#eduTeacher{height:301px;width: 330px;background: url(images/eduTeacher.gif);position: absolute;top: 270px;left:600px; }
+#eduStudents{height: 77px;width: 654px;background: url(images/eduStudents.png);position: absolute;top: 643px;left:400px;}
+#eduTeacher{height:301px;width: 330px;background: url(images/eduTeacher.gif);position: absolute;top: 270px;left:200px; }
 
 /* elements in infoBox*/
 #infoBuilding{height: 348px;width: 314px;background: url(images/infoBuilding.png);position: absolute;top: 230px;left: 1300px;}
@@ -60,11 +60,11 @@ body{width: 1920px;margin:0 0;font-family:"Î¢ÈíÑÅºÚ","ºÚÌå","ËÎÌå"}
 #infoTitle{height: 215px;width: 190px;background: url(images/infoTitle.png);position: absolute;top: 120px;left: 770px;}
 
 /* element in joinBox*/
-#joinCloud{height: 284px;width: 743px;background: url(images/joinCloud.png);position: absolute;top:50px;left: 200px;}
+#joinCloud{height: 284px;width: 743px;background: url(images/joinCloud.png);position: absolute;top:100px;left: 200px;}
 #joinMail1{height: 296px;width: 407px;background: url(images/joinMail1.png);position: absolute;top: 255px;left: 550px;}
 #joinMail2{height: 278px;width: 109px;background: url(images/joinMail2.png);position: absolute;top: 332px;left: 540px;}
 #joinTitle{height: 215px;width: 190px;background: url(images/joinTitle.png);position: absolute;top: 70px;left: 1050px;}
-#joinBoy{height: 301px;width: 225px;background: url(images/joinBoy.gif);position: absolute;top:360px ;left:1050px ;}
+#joinBoy{height: 301px;width: 225px;background: url(images/joinBoy.gif);position: absolute;top:360px ;left:1920px ;}
 /* elements of wrapper */
 #wBanner{height: 311px;width: 1920px;float: left;}
 #wContent{height: auto;min-height: 660px;width: 940px;float: left;margin-left: 380px;margin-top: 50px;}
