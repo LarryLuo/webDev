@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-quiv="Content-Type" content="text/html; charset=gb2312">
 		<link rel="stylesheet" type="text/css" href="css/layout.css">
@@ -17,6 +18,7 @@
 	
 		<!-- navigation bar -->
 		<div id="topToolbar">
+			<div id="navBar">
 			<div id="navLogo" onClick="window.location = 'http://www.cdcaf.com/scl-edu'"></div>
 			<div class="navButton" style="background:url(css/images/aboutButton.png) no-repeat" >
 				<div class="navSelected" onClick="Page_jump('mid=1&sid=1')"></div>
@@ -30,6 +32,7 @@
 			<div class="navButton" style="background:url(css/images/joinButton.png) no-repeat" >
 				<div class="navSelected" onClick="Page_jump('mid=4&sid=11')"></div>
 			</div>
+			</div>
 		</div>
 
 
@@ -39,7 +42,7 @@
 		<!-- main box of index , contains 5 boxes -->
 		<!-- indexBox ,1button & 1animation-->
 		<div id="indexBox">
-			<div style="position:relative;" >
+			<div id="index1000" style="position:relative;clear:both;width:1000px;height:1000px;margin:0 auto;" >
 			<div id="indexLogo"></div>
 			<!-- arrow with animation-->
 			<div id="indexWheel"></div>
@@ -47,7 +50,7 @@
 		</div>
 		<!-- about us Box, 1button & 3 animation-->
 		<div id="aboutBox">
-			<div style="position:relative">
+			<div id="about1000" style="position:relative;clear:both;width:1000px;height:1000px;margin:0 auto;">
 			<div id="aboutTitle" onClick="Page_jump('mid=1&sid=1')"></div>
 			<!-- bus stop with animation -->
 			<div id="aboutStop"></div>
@@ -62,7 +65,7 @@
 		</div>
 		<!-- eduBox,1 button & 4 animation-->
 		<div id="eduBox">
-			<div style="position:relative">
+			<div id="edu1000" style="position:relative;clear:both;width:1000px;height:1000px;margin:0 auto;">
 			<div id="eduTitle" onClick="Page_jump('mid=2&sid=3')"></div>
 			<!-- borad,ruler,words,children with animation-->
 			<div id="eduBoard"></div>
@@ -74,7 +77,7 @@
 		</div>
 		<!-- infoBox,1 button & 2 animation-->
 		<div id="infoBox">
-			<div style="position:relative">
+			<div id="info1000" style="position:relative;clear:both;width:1000px;height:1000px;margin:0 auto;">
 			<div id="infoTitle" onClick="Page_jump('mid=3&sid=7')"></div>
 			<!-- cakehouse & building with animation-->
 			<div id="infoFood"></div>
@@ -86,7 +89,7 @@
 		</div>
 		<!-- joinBox,1 button & 2animation-->
 		<div id="joinBox">
-			<div style="position:relative">
+			<div id="join1000" style="position:relative;clear:both;width:1000px;height:1000px;margin:0 auto;">
 			<div id="joinTitle" onClick="Page_jump('mid=4&sid=11')"></div>
 			<!-- mailbox and blackboy with animation-->
 			<div id="joinMail1"></div>
@@ -95,7 +98,7 @@
 			<div id="joinLine"></div>
 			<div id="joinBoy"></div>
 			</div>
-		</div>
+		</div> 
 		<!-- the up to top button -->
 	</body>
 </html>

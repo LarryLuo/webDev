@@ -283,7 +283,7 @@ function to0(){
 	moving=1;
 		$('html,body').animate({
 			scrollTop:$('#navBar').offset().top
-		},720,function(){
+		},500,function(){
 			moving=0;
 		} );
 }
@@ -291,8 +291,8 @@ function to0(){
 function to1(){
 	moving=1;
 		$('html,body').animate({
-			scrollTop:$('#indexBox').offset().top
-		},720,function(){
+			scrollTop:$('#indexBox').offset().top+1000-$(window).height()
+		},500,function(){
 			moving=0;
 		});
 }
@@ -300,8 +300,8 @@ function to1(){
 function to2(){
 	moving=1;
 		$('html,body').animate({
-			scrollTop:$('#aboutBox').offset().top
-		},720 ,function(){
+			scrollTop:$('#aboutBox').offset().top+1000-$(window).height()
+		},500 ,function(){
 			moving=0;
 		});
 }
@@ -309,8 +309,8 @@ function to2(){
 function to3(){
 	moving=1;
 		$('html,body').animate({
-			scrollTop:$('#eduBox').offset().top
-		},720 ,function(){
+			scrollTop:$('#eduBox').offset().top+1000-$(window).height()
+		},500 ,function(){
 			moving=0;
 		});
 }
@@ -318,8 +318,8 @@ function to3(){
 function to4(){
 	moving=1;
 		$('html,body').animate({
-			scrollTop:$('#infoBox').offset().top
-		},720 ,function() {
+			scrollTop:$('#infoBox').offset().top+1000-$(window).height()
+		},500 ,function() {
 			moving=0;
 		});
 }
@@ -327,8 +327,8 @@ function to4(){
 function to5(){
 	moving=1;
 		$('html,body').animate({
-			scrollTop:$('#joinBox').offset().top
-		},720 ,function() {
+			scrollTop:$('#joinBox').offset().top+1000-$(window).height()
+		},500 ,function() {
 
 		});
 }
@@ -343,88 +343,82 @@ function to5(){
 
 function aboutBoxIn(){
 	/* animation of aboutBox in*/
-	$('#aboutTitle').animate({top:'220px'},1500);
-	$('#aboutCloud1').animate({top:'200px',left:'500px'},1500);
-	$('#aboutCloud2').animate({top:'150px',left:'1100px'},1500);
+	$('#aboutTitle').animate({top:'400px'},1500);
+	$('#aboutCloud1').animate({top:'340px',left:'100px'},1500);
+	$('#aboutCloud2').animate({top:'340px',left:'600px'},1500);
 	busAnimation();
 }
 function aboutBoxOut(){
 	/* animation of aboutBox out*/
-	$('#aboutTitle').animate({top:'80px'},1500);
-	$('#aboutCloud1').animate({top:'100px',left:'400px'},1500);
-	$('#aboutCloud2').animate({top:'50px',left:'1400px'},1500);
+	$('#aboutTitle').animate({top:'350px'},1500);
+	$('#aboutCloud1').animate({top:'290px',left:'50px'},1500);
+	$('#aboutCloud2').animate({top:'290px',left:'550px'},1500);
 	stopBus();
 }
 function busAnimation(){
-	$('#aboutBus').animate({width:'443px',left:'-=443'},1000)
-	.animate({left:'-=757'},2000)
-	.animate({left:'-=1220'},2000)
-	.animate({width:'1px'},1000)
-	.animate({left:'+=2420'},200,busAnimation);
+	$('#aboutBus')
+	.animate({left:'-=300'},5000)
+	.animate({left:'+=300'},5000,busAnimation);
 }
 function stopBus(){
 	$('#aboutBus').stop(true,false)
-	.animate({width:'1px'},100)
-	.animate({left:'1920px'},100);
+	.animate({left:'500px'},100);
 }
 
 function eduBoxIn(){
-	$('#eduTitle').animate({top:'270px'},1500);
-	$('#eduBoard').animate({left:'500px'},1500);
-	$('#eduCube').animate({left:'1200px'},1500);
-	$('#eduRuler').animate({top:'340px',left:'1300px'},1500);
-	$('#eduStudents').animate({left:'600px'},1500);
-	$('#eduTeacher').animate({left:'600px'},1500);
+	$('#eduTitle').animate({top:'350px'},1500);
+	$('#eduBoard').animate({left:'10px'},1500);
+	$('#eduCube').animate({left:'700px'},1500);
+	$('#eduRuler').animate({top:'280px',left:'750px'},1500);
+	$('#eduStudents').animate({left:'10px'},1500);
+	$('#eduTeacher').animate({left:'200px'},1500);
 }
 function eduBoxOut(){
-	$('#eduTitle').animate({top:'120px'},1500);
-	$('#eduBoard').animate({left:'400px'},1500);
-	$('#eduCube').animate({left:'1300px'},1500);
-	$('#eduRuler').animate({top:'10px',left:'1500px'},1500);
-	$('#eduStudents').animate({left:'400px'},1500);
-	$('#eduTeacher').animate({left:'400px'},1500);
+	$('#eduTitle').animate({top:'300px'},1500);
+	$('#eduBoard').animate({left:'0px'},1500);
+	$('#eduCube').animate({left:'750px'},1500);
+	$('#eduRuler').animate({top:'230px',left:'800px'},1500);
+	$('#eduStudents').animate({left:'0px'},1500);
+	$('#eduTeacher').animate({left:'150px'},1500);
 }
 function infoBoxIn(){
-	$('#infoBuilding').animate({left:'1400px'},1500);
-	$('#infoFood').animate({top:'330px'},1500);
-	$('#infoGirl').animate({left:'640px'},1500);
-	$('#infoPlay').animate({left:'1250px'},1500);
-	$('#infoShop').animate({left:'450px'},1500);
-	$('#infoTitle').animate({top:'250px'},1500);
+	$('#infoBuilding').animate({left:'680px'},1500);
+	$('#infoFood').animate({top:'400px'},1500);
+	$('#infoGirl').animate({left:'230px'},1500);
+	$('#infoPlay').animate({left:'600px'},1500);
+	$('#infoShop').animate({left:'10px'},1500);
+	$('#infoTitle').animate({top:'420px'},1500);
 }
 function infoBoxOut(){
-	$('#infoBuilding').animate({left:'1500px'},1500);
-	$('#infoFood').animate({top:'400px'},1500);
-	$('#infoGirl').animate({left:'700px'},1500);
-	$('#infoPlay').animate({left:'1150px'},1500);
-	$('#infoShop').animate({left:'400px'},1500);
-	$('#infoTitle').animate({top:'400px'},1500);
+	$('#infoBuilding').animate({left:'650px'},1500);
+	$('#infoFood').animate({top:'380px'},1500);
+	$('#infoGirl').animate({left:'280px'},1500);
+	$('#infoPlay').animate({left:'550px'},1500);
+	$('#infoShop').animate({left:'0px'},1500);
+	$('#infoTitle').animate({top:'370px'},1500);
 }
 function joinBoxIn(){
-	$('#joinCloud').animate({top:'160px',left:'300px'},1500);
-	$('#joinMail1').animate({left:'600px'},1500);
-	$('#joinMail2').animate({left:'492px'},1500);
-	$('#joinTitle').animate({top:'220px'},1500);
+	$('#joinCloud').animate({top:'390px',left:'210px'},1500);
+	$('#joinMail1').animate({left:'130px'},1500);
+	$('#joinMail2').animate({left:'10px'},1500);
+	$('#joinTitle').animate({top:'350px'},1500);
 	bikeAnimation();
 }
 function joinBoxOut(){
-	$('#joinCloud').animate({top:'200px',left:'200px'},1500);
-	$('#joinMail1').animate({left:'550px'},1500);
-	$('#joinMail2').animate({left:'540px'},1500);
-	$('#joinTitle').animate({top:'170px'},1500);
+	$('#joinCloud').animate({top:'440px',left:'160px'},1500);
+	$('#joinMail1').animate({left:'80px'},1500);
+	$('#joinMail2').animate({left:'0px'},1500);
+	$('#joinTitle').animate({top:'300px'},1500);
 	stopBike();
 }
 function bikeAnimation(){
-	$('#joinBoy').animate({width:'225px',left:'-=225'},1000)
-	.animate({left:'-=675'},2000)
-	.animate({left:'-=1245'},2000)
-	.animate({width:'1px'},100)
-	.animate({left:'+=2145'},200,bikeAnimation);
+	$('#joinBoy')
+	.animate({left:'-=300'},5000)
+	.animate({left:'+=300'},5000,bikeAnimation);
 }
 function stopBike(){
 	$('#joinBoy').stop(true,false)
-	.animate({width:'1px'},100)
-	.animate({left:'1920px'},100);
+	.animate({left:'700px'},100);
 }
 
 		// 点击按钮后，滚动条的垂直方向的值逐渐变为0，也就是滑动向上的效果
