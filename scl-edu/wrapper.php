@@ -41,23 +41,25 @@
 					break;
 			}
 		?>
+	<div id="header">
 		<div id="navBar">
-			<div id="navLogo" onClick="window.location = 'http://www.cdcaf.com/scl-edu'"></div>
+			<div id="navLogo"><a href="index.php"><div style="width:219px;height:44px"></div></a></div>
 			<div class="navButton" style="background:url(css/images/aboutButton.png) no-repeat" >
-				<div class="navSelected" onClick="Page_jump('mid=1&sid=1')"></div>
+				<div class="navSelected"><a href="wrapper.php?mid=1&sid=1"><div id="selected2"></div></a></div>
 			</div>
 			<div class="navButton" style="background:url(css/images/eduButton.png) no-repeat" >
-				<div class="navSelected" onClick="Page_jump('mid=2&sid=3')"></div>
+				<div class="navSelected"><a href="wrapper.php?mid=2&sid=3"><div id="selected2"></div></a></div>
 			</div>
 			<div class="navButton" style="background:url(css/images/infoButton.png) no-repeat" >
-				<div class="navSelected" onClick="Page_jump('mid=3&sid=7&pageno=1')"></div>
+				<div class="navSelected"><a href="wrapper.php?mid=3&sid=7&pageno=1"><div id="selected2"></div></a></div>
 			</div>
 			<div class="navButton" style="background:url(css/images/joinButton.png) no-repeat" >
-				<div class="navSelected" onClick="Page_jump('mid=4&sid=11')"></div>
+				<div class="navSelected"><a href="wrapper.php?mid=4&sid=11"><div id="selected2"></div></a></div>
 			</div>
-
 		</div>
-		<div id="wBanner" style="background:url(css/images/<?=$pageName?>_Banner.png) no-repeat"></div>
+	</div>
+	<div id="content">
+		<div id="wBanner" style="background:url(css/images/<?=$pageName?>_Banner.png) repeat-x 0 0"></div>
 		<div id="wContent">
 			<div id="wLeft">
 				<div id="wTitle" style="background:url(css/images/<?=$pageName?>_Title.png) no-repeat"></div>
@@ -183,6 +185,7 @@
 			</div>
 		</div>
 
-		<div id="wBottom" style="background:url(css/images/<?=$pageName?>_Bottom.png) no-repeat"></div>
+		<div id="wBottom" style="background:url(css/images/<?=$pageName?>_Bottom.png) repeat-x 0 0"></div>
+	</div>
 	</body>
 </html>

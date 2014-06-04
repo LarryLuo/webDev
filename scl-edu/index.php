@@ -19,18 +19,18 @@
 		<!-- navigation bar -->
 		<div id="topToolbar">
 			<div id="navBar">
-			<div id="navLogo" onClick="window.location = 'http://www.cdcaf.com/scl-edu'"></div>
+			<div id="navLogo"><a href="index.php"><div style="width:219px;height:44px"></div></a></div>
 			<div class="navButton" style="background:url(css/images/aboutButton.png) no-repeat" >
-				<div class="navSelected" onClick="Page_jump('mid=1&sid=1')"></div>
+				<div class="navSelected"><a href="wrapper.php?mid=1&sid=1"><div id="selected2"></div></a></div>
 			</div>
 			<div class="navButton" style="background:url(css/images/eduButton.png) no-repeat" >
-				<div class="navSelected" onClick="Page_jump('mid=2&sid=3')"></div>
+				<div class="navSelected"><a href="wrapper.php?mid=2&sid=3"><div id="selected2"></div></a></div>
 			</div>
 			<div class="navButton" style="background:url(css/images/infoButton.png) no-repeat" >
-				<div class="navSelected" onClick="Page_jump('mid=3&sid=7')"></div>
+				<div class="navSelected"><a href="wrapper.php?mid=3&sid=7&pageno=1"><div id="selected2"></div></a></div>
 			</div>
 			<div class="navButton" style="background:url(css/images/joinButton.png) no-repeat" >
-				<div class="navSelected" onClick="Page_jump('mid=4&sid=11')"></div>
+				<div class="navSelected"><a href="wrapper.php?mid=4&sid=11"><div id="selected2"></div></a></div>
 			</div>
 			</div>
 		</div>
@@ -51,7 +51,7 @@
 		<!-- about us Box, 1button & 3 animation-->
 		<div id="aboutBox">
 			<div id="about1000" style="position:relative;clear:both;width:1000px;height:1000px;margin:0 auto;">
-			<div id="aboutTitle" onClick="Page_jump('mid=1&sid=1')"></div>
+			<div id="aboutTitle"><a href="wrapper.php?mid=1&sid=1"><div style="width:215px;height:190px"></div></a></div>
 			<!-- bus stop with animation -->
 			<div id="aboutStop"></div>
 			<!-- clouds with animation-->
@@ -66,7 +66,7 @@
 		<!-- eduBox,1 button & 4 animation-->
 		<div id="eduBox">
 			<div id="edu1000" style="position:relative;clear:both;width:1000px;height:1000px;margin:0 auto;">
-			<div id="eduTitle" onClick="Page_jump('mid=2&sid=3')"></div>
+			<div id="eduTitle"><a href="wrapper.php?mid=2&sid=3&pageno=1"><div style="width:215px;height:190px"></div></a></div>
 			<!-- borad,ruler,words,children with animation-->
 			<div id="eduBoard"></div>
 			<div id="eduRuler"></div>
@@ -78,7 +78,7 @@
 		<!-- infoBox,1 button & 2 animation-->
 		<div id="infoBox">
 			<div id="info1000" style="position:relative;clear:both;width:1000px;height:1000px;margin:0 auto;">
-			<div id="infoTitle" onClick="Page_jump('mid=3&sid=7')"></div>
+			<div id="infoTitle"><a href="wrapper.php?mid=3&sid=7"><div style="width:215px;height:190px"></div></a></div>
 			<!-- cakehouse & building with animation-->
 			<div id="infoFood"></div>
 			<div id="infoBuilding"></div>
@@ -90,13 +90,13 @@
 		<!-- joinBox,1 button & 2animation-->
 		<div id="joinBox">
 			<div id="join1000" style="position:relative;clear:both;width:1000px;height:1000px;margin:0 auto;">
-			<div id="joinTitle" onClick="Page_jump('mid=4&sid=11')"></div>
 			<!-- mailbox and blackboy with animation-->
 			<div id="joinMail1"></div>
 			<div id="joinMail2"></div>
 			<div id="joinCloud"></div>
 			<div id="joinLine"></div>
 			<div id="joinBoy"></div>
+			<div id="joinTitle"><a href="wrapper.php?mid=4&sid=11"><div style="width:215px;height:190px"></div></a></div>
 			</div>
 		</div> 
 		<!-- the up to top button -->

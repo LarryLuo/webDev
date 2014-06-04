@@ -9,12 +9,16 @@ var pset6=0;
 var onpage=1;
 $(function(){
 
-$("html,body").animate({ scrollTop: 0 }, 1, function(){
-		$("html,body").animate({scrollTop: 0 }, 500);
-	});
+//$("html,body").animate({ scrollTop: 0 }, 1, function(){
+//		$("html,body").animate({scrollTop: 0 }, 500);
+//	});
 
 	if (screen.height>1100){
 		$("body").css("height","5300px;");
+	}
+	if($(window).height()<1000){
+		$("html,body").animate({scrollTop:$('#indexBox').offset().top+1000-$(window).height()
+		},750);
 	}
 
 $(window).bind('scroll',function(e){
@@ -283,7 +287,7 @@ function to0(){
 	moving=1;
 		$('html,body').animate({
 			scrollTop:$('#navBar').offset().top
-		},500,function(){
+		},750,function(){
 			moving=0;
 		} );
 }
@@ -292,7 +296,7 @@ function to1(){
 	moving=1;
 		$('html,body').animate({
 			scrollTop:$('#indexBox').offset().top+1000-$(window).height()
-		},500,function(){
+		},750,function(){
 			moving=0;
 		});
 }
@@ -301,7 +305,7 @@ function to2(){
 	moving=1;
 		$('html,body').animate({
 			scrollTop:$('#aboutBox').offset().top+1000-$(window).height()
-		},500 ,function(){
+		},750 ,function(){
 			moving=0;
 		});
 }
@@ -310,7 +314,7 @@ function to3(){
 	moving=1;
 		$('html,body').animate({
 			scrollTop:$('#eduBox').offset().top+1000-$(window).height()
-		},500 ,function(){
+		},750 ,function(){
 			moving=0;
 		});
 }
@@ -319,7 +323,7 @@ function to4(){
 	moving=1;
 		$('html,body').animate({
 			scrollTop:$('#infoBox').offset().top+1000-$(window).height()
-		},500 ,function() {
+		},750 ,function() {
 			moving=0;
 		});
 }
@@ -328,7 +332,7 @@ function to5(){
 	moving=1;
 		$('html,body').animate({
 			scrollTop:$('#joinBox').offset().top+1000-$(window).height()
-		},500 ,function() {
+		},750 ,function() {
 
 		});
 }
@@ -362,7 +366,7 @@ function busAnimation(){
 }
 function stopBus(){
 	$('#aboutBus').stop(true,false)
-	.animate({left:'500px'},100);
+	.animate({left:'500px'},500);
 }
 
 function eduBoxIn(){
