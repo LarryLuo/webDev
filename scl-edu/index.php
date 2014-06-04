@@ -39,7 +39,7 @@
 		<!-- main box of index , contains 5 boxes -->
 		<!-- indexBox ,1button & 1animation-->
 		<div id="indexBox">
-			<div style="position:relative">
+			<div style="position:relative;" >
 			<div id="indexLogo"></div>
 			<!-- arrow with animation-->
 			<div id="indexWheel"></div>
@@ -92,6 +92,7 @@
 			<div id="joinMail1"></div>
 			<div id="joinMail2"></div>
 			<div id="joinCloud"></div>
+			<div id="joinLine"></div>
 			<div id="joinBoy"></div>
 			</div>
 		</div>

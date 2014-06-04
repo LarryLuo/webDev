@@ -343,89 +343,87 @@ function to5(){
 
 function aboutBoxIn(){
 	/* animation of aboutBox in*/
-	$('#aboutTitle').animate({top:'120px'},1500);
-	$('#aboutCloud1').animate({top:'150px',left:'300px'},1500);
-	$('#aboutCloud2').animate({top:'100px',left:'800px'},1500);
+	$('#aboutTitle').animate({top:'220px'},1500);
+	$('#aboutCloud1').animate({top:'200px',left:'500px'},1500);
+	$('#aboutCloud2').animate({top:'150px',left:'1100px'},1500);
 	busAnimation();
 }
 function aboutBoxOut(){
 	/* animation of aboutBox out*/
 	$('#aboutTitle').animate({top:'80px'},1500);
-	$('#aboutCloud1').animate({top:'100px',left:'200px'},1500);
-	$('#aboutCloud2').animate({top:'50px',left:'1200px'},1500);
+	$('#aboutCloud1').animate({top:'100px',left:'400px'},1500);
+	$('#aboutCloud2').animate({top:'50px',left:'1400px'},1500);
 	stopBus();
 }
 function busAnimation(){
-	$('#aboutBus').slideToggle('100')
-	.show('100')
-	.animate({left:'-=1200'},4000)
+	$('#aboutBus').animate({width:'443px',left:'-=443'},1000)
+	.animate({left:'-=757'},2000)
 	.animate({left:'-=1220'},2000)
-	.hide('100')
+	.animate({width:'1px'},1000)
 	.animate({left:'+=2420'},200,busAnimation);
 }
 function stopBus(){
 	$('#aboutBus').stop(true,false)
-	.hide('100')
+	.animate({width:'1px'},100)
 	.animate({left:'1920px'},100);
 }
 
 function eduBoxIn(){
-	$('#eduTitle').animate({top:'170px'},1500);
-	$('#eduBoard').animate({left:'300px'},1500);
-	$('#eduCube').animate({left:'1000px'},1500);
-	$('#eduRuler').animate({top:'60px',left:'1100px'},1500);
-	$('#eduStudents').animate({left:'400px'},1500);
-	$('#eduTeacher').animate({left:'400px'},1500);
+	$('#eduTitle').animate({top:'270px'},1500);
+	$('#eduBoard').animate({left:'500px'},1500);
+	$('#eduCube').animate({left:'1200px'},1500);
+	$('#eduRuler').animate({top:'340px',left:'1300px'},1500);
+	$('#eduStudents').animate({left:'600px'},1500);
+	$('#eduTeacher').animate({left:'600px'},1500);
 }
 function eduBoxOut(){
 	$('#eduTitle').animate({top:'120px'},1500);
-	$('#eduBoard').animate({left:'200px'},1500);
-	$('#eduCube').animate({left:'1100px'},1500);
-	$('#eduRuler').animate({top:'10px',left:'1300px'},1500);
-	$('#eduStudents').animate({left:'200px'},1500);
-	$('#eduTeacher').animate({left:'200px'},1500);
+	$('#eduBoard').animate({left:'400px'},1500);
+	$('#eduCube').animate({left:'1300px'},1500);
+	$('#eduRuler').animate({top:'10px',left:'1500px'},1500);
+	$('#eduStudents').animate({left:'400px'},1500);
+	$('#eduTeacher').animate({left:'400px'},1500);
 }
 function infoBoxIn(){
-	$('#infoBuilding').animate({left:'1100px'},1500);
-	$('#infoFood').animate({top:'150px'},1500);
-	$('#infoGirl').animate({left:'440px'},1500);
-	$('#infoPlay').animate({left:'1050px'},1500);
-	$('#infoShop').animate({left:'250px'},1500);
-	$('#infoTitle').animate({top:'170px'},1500);
+	$('#infoBuilding').animate({left:'1400px'},1500);
+	$('#infoFood').animate({top:'330px'},1500);
+	$('#infoGirl').animate({left:'640px'},1500);
+	$('#infoPlay').animate({left:'1250px'},1500);
+	$('#infoShop').animate({left:'450px'},1500);
+	$('#infoTitle').animate({top:'250px'},1500);
 }
 function infoBoxOut(){
-	$('#infoBuilding').animate({left:'1300px'},1500);
-	$('#infoFood').animate({top:'120px'},1500);
-	$('#infoGirl').animate({left:'500px'},1500);
-	$('#infoPlay').animate({left:'950px'},1500);
-	$('#infoShop').animate({left:'200px'},1500);
-	$('#infoTitle').animate({top:'120px'},1500);
+	$('#infoBuilding').animate({left:'1500px'},1500);
+	$('#infoFood').animate({top:'400px'},1500);
+	$('#infoGirl').animate({left:'700px'},1500);
+	$('#infoPlay').animate({left:'1150px'},1500);
+	$('#infoShop').animate({left:'400px'},1500);
+	$('#infoTitle').animate({top:'400px'},1500);
 }
 function joinBoxIn(){
-	$('#joinCloud').animate({top:'60px',left:'300px'},1500);
+	$('#joinCloud').animate({top:'160px',left:'300px'},1500);
 	$('#joinMail1').animate({left:'600px'},1500);
 	$('#joinMail2').animate({left:'492px'},1500);
-	$('#joinTitle').animate({top:'120px'},1500);
+	$('#joinTitle').animate({top:'220px'},1500);
 	bikeAnimation();
 }
 function joinBoxOut(){
-	$('#joinCloud').animate({top:'100px',left:'200px'},1500);
+	$('#joinCloud').animate({top:'200px',left:'200px'},1500);
 	$('#joinMail1').animate({left:'550px'},1500);
 	$('#joinMail2').animate({left:'540px'},1500);
-	$('#joinTitle').animate({top:'70px'},1500);
+	$('#joinTitle').animate({top:'170px'},1500);
 	stopBike();
 }
 function bikeAnimation(){
-	$('#joinBoy').slideToggle('100')
-	.show('100')
-	.animate({left:'-=900'},4000)
+	$('#joinBoy').animate({width:'225px',left:'-=225'},1000)
+	.animate({left:'-=675'},2000)
 	.animate({left:'-=1245'},2000)
-	.hide('100')
+	.animate({width:'1px'},100)
 	.animate({left:'+=2145'},200,bikeAnimation);
 }
 function stopBike(){
 	$('#joinBoy').stop(true,false)
-	.hide('100')
+	.animate({width:'1px'},100)
 	.animate({left:'1920px'},100);
 }
 
