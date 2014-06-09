@@ -19,18 +19,22 @@
 		<!-- navigation bar -->
 		<div id="topToolbar">
 			<div id="navBar">
-			<div id="navLogo"><a href="index.php"><div style="width:219px;height:44px"></div></a></div>
-			<div class="navButton" style="background:url(css/images/aboutButton.png) no-repeat" >
-				<div class="navSelected"><a href="wrapper.php?mid=1&sid=1"><div id="selected2"></div></a></div>
+			<div id="navLogo" style="background:url(css/images/logo.png)"><a href="index.php"><div style="width:219px;height:44px"></div></a></div>
+			<div class="navButton">
+				<a href="wrapper.php?mid=1&sid=1">
+					<img src="css/images/aboutButton.png" onmouseover="this.src='css/images/aboutButton_selected.png'" onmouseout="this.src='css/images/aboutButton.png'"></a>
 			</div>
-			<div class="navButton" style="background:url(css/images/eduButton.png) no-repeat" >
-				<div class="navSelected"><a href="wrapper.php?mid=2&sid=3"><div id="selected2"></div></a></div>
+			<div class="navButton">
+				<a href="wrapper.php?mid=2&sid=3">
+					<img src="css/images/eduButton.png" onmouseover="this.src='css/images/eduButton_selected.png'" onmouseout="this.src='css/images/eduButton.png'"></a>
 			</div>
-			<div class="navButton" style="background:url(css/images/infoButton.png) no-repeat" >
-				<div class="navSelected"><a href="wrapper.php?mid=3&sid=7&pageno=1"><div id="selected2"></div></a></div>
+			<div class="navButton">
+				<a href="wrapper.php?mid=3&sid=7&pageno=1">
+					<img src="css/images/infoButton.png" onmouseover="this.src='css/images/infoButton_selected.png'" onmouseout="this.src='css/images/infoButton.png'"></a>
 			</div>
-			<div class="navButton" style="background:url(css/images/joinButton.png) no-repeat" >
-				<div class="navSelected"><a href="wrapper.php?mid=4&sid=11"><div id="selected2"></div></a></div>
+			<div class="navButton">
+				<a href="wrapper.php?mid=4&sid=11">
+					<img src="css/images/joinButton.png" onmouseover="this.src='css/images/joinButton_selected.png'" onmouseout="this.src='css/images/joinButton.png'"></a>
 			</div>
 			</div>
 		</div>
@@ -66,7 +70,7 @@
 		<!-- eduBox,1 button & 4 animation-->
 		<div id="eduBox">
 			<div id="edu1000" style="position:relative;clear:both;width:1000px;height:1000px;margin:0 auto;">
-			<div id="eduTitle"><a href="wrapper.php?mid=2&sid=3&pageno=1"><div style="width:215px;height:190px"></div></a></div>
+			<div id="eduTitle"><a href="wrapper.php?mid=2&sid=3"><div style="width:215px;height:190px"></div></a></div>
 			<!-- borad,ruler,words,children with animation-->
 			<div id="eduBoard"></div>
 			<div id="eduRuler"></div>
@@ -78,7 +82,7 @@
 		<!-- infoBox,1 button & 2 animation-->
 		<div id="infoBox">
 			<div id="info1000" style="position:relative;clear:both;width:1000px;height:1000px;margin:0 auto;">
-			<div id="infoTitle"><a href="wrapper.php?mid=3&sid=7"><div style="width:215px;height:190px"></div></a></div>
+			<div id="infoTitle"><a href="wrapper.php?mid=3&sid=7&pageno=1"><div style="width:215px;height:190px"></div></a></div>
 			<!-- cakehouse & building with animation-->
 			<div id="infoFood"></div>
 			<div id="infoBuilding"></div>

@@ -44,17 +44,17 @@
 	<div id="header">
 		<div id="navBar">
 			<div id="navLogo"><a href="index.php"><div style="width:219px;height:44px"></div></a></div>
-			<div class="navButton" style="background:url(css/images/aboutButton.png) no-repeat" >
-				<div class="navSelected"><a href="wrapper.php?mid=1&sid=1"><div id="selected2"></div></a></div>
+			<div class="navButton">
+				<a href="wrapper.php?mid=1&sid=1"><img src="css/images/aboutButton_02.png" onmouseover="this.src='css/images/aboutButton_selected.png'" onmouseout="this.src='css/images/aboutButton_02.png'"></a>
 			</div>
-			<div class="navButton" style="background:url(css/images/eduButton.png) no-repeat" >
-				<div class="navSelected"><a href="wrapper.php?mid=2&sid=3"><div id="selected2"></div></a></div>
+			<div class="navButton">
+				<a href="wrapper.php?mid=2&sid=3"><img src="css/images/eduButton_02.png"  onmouseover="this.src='css/images/eduButton_selected.png'" onmouseout="this.src='css/images/eduButton_02.png'"></a>
 			</div>
-			<div class="navButton" style="background:url(css/images/infoButton.png) no-repeat" >
-				<div class="navSelected"><a href="wrapper.php?mid=3&sid=7&pageno=1"><div id="selected2"></div></a></div>
+			<div class="navButton">
+				<a href="wrapper.php?mid=3&sid=7&pageno=1"><img src="css/images/infoButton_02.png"  onmouseover="this.src='css/images/infoButton_selected.png'" onmouseout="this.src='css/images/infoButton_02.png'"></a>
 			</div>
-			<div class="navButton" style="background:url(css/images/joinButton.png) no-repeat" >
-				<div class="navSelected"><a href="wrapper.php?mid=4&sid=11"><div id="selected2"></div></a></div>
+			<div class="navButton">
+				<a href="wrapper.php?mid=4&sid=11"><img src="css/images/joinButton_02.png"  onmouseover="this.src='css/images/joinButton_selected.png'" onmouseout="this.src='css/images/joinButton_02.png'"></a>
 			</div>
 		</div>
 	</div>

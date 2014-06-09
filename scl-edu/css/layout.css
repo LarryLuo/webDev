@@ -9,17 +9,8 @@ body{height: auto;margin:0 0;font-family:"Î¢ÈíÑÅºÚ","ºÚÌå","ËÎÌå";}
 
 /* navagation bar style for wrapper.php */
 #navBar{height: 60px;width: 1000px;margin: 0 auto;z-index: 200}
-#navLogo{height: 44px;width: 219px;background: url(images/logo.png);margin-top: 8px;margin-right: 100px;float: left;}
+#navLogo{height: 44px;width: 219px;background: url(images/logo_2.png);margin-top: 8px;margin-right: 100px;float: left;}
 .navButton{height: 29px;width: 103px;margin-top:15px;margin-right: 60px;float: left;display: block;z-index: 210}
-.navSelected{display: none;}
-.navButton:hover .navSelected{
-	display: block;
-	width: 103px;
-	height: 29px;
-	border: 2px solid #FFF;
-	}
-#selected2{height: 29px;width: 103px;border: 2px solid #FFF;}
-
 
 /* top tool bar for index.html */
 #topToolbar{
@@ -29,7 +20,7 @@ body{height: auto;margin:0 0;font-family:"Î¢ÈíÑÅºÚ","ºÚÌå","ËÎÌå";}
 	background: #101010;
 	position: fixed;top: 0px;left: 0; _top:0;
 	_position:absolute; _top:expression(documentElement.scrollTop);
-	z-index: 1;
+	z-index:1;
 	filter:alpha(Opacity=80);
 	-moz-opacity:0.5;
 	opacity: 0.5;
