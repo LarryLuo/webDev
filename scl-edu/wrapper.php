@@ -117,6 +117,12 @@
 							echo "</div>";
 						}elseif($nid!=null){
 							/* nid is not null , list news detail by nid */
+							echo "<h2>";
+								$title_sql="SELECT title FROM p_newsbase WHERE id =".$nid;
+								$title_query=mysql_query($title_sql,$conn);
+								$title_row=mysql_fetch_array($title_query);
+								echo $title_row[title];
+							echo "</h2>";
 							echo "<div id='newsDetail'>";
 								$news_sql="SELECT * FROM p_newscontent WHERE nid = ".$nid ;
 								$news_query=mysql_query($news_sql,$conn);
@@ -124,6 +130,9 @@
 								echo $news_row[content];
 							echo "</div>";
 					
+						}elseif($sid==8){
+							
+
 						}else{
 							/* nid !=7, echo the content detail by sid */
 							$content_sql="SELECT * FROM p_content WHERE sid = ".$sid ;
@@ -133,7 +142,7 @@
 						}						
 				?>
 				<?php
-					if ($mid==3) {
+					if ($mid==3&&$sid==7&&$nid==null||$sid==9) {
 				?>
 
 

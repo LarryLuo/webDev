@@ -87,6 +87,7 @@ body{height: auto;margin:0 0;font-family:"Î¢ÈíÑÅºÚ","ºÚÌå","ËÎÌå";}
 #newsTitle a{font-size: 23px;text-decoration: none;color: #A66D25;}
 #newsBrief {margin-top: 10px;color: #9D9D9D}
 #newsBrief p{ margin: 0;font-size: 14px;}
+#newsDetail{margin-top: 50px;min-height: 400px;}
 #newsDetail p{font-size: 14px;color:#666666;line-height: 1rem;}
 /* style of page buttons */
 #wPagebottom{height: 43px;width: 700px;text-align: center;margin-top: 20px;}
