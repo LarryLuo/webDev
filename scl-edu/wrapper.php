@@ -133,6 +133,9 @@
 						}elseif($sid==8){
 							
 
+						}elseif($sid==12){
+							include 'table.php';
+
 						}else{
 							/* nid !=7, echo the content detail by sid */
 							$content_sql="SELECT * FROM p_content WHERE sid = ".$sid ;

@@ -1,0 +1,89 @@
+body{height: auto;margin:0 0;font-family:"Î¢ÈíÑÅºÚ","ºÚÌå","ËÎÌå";background-color: #ECEBB6}
+/* navagation bar style for wrapper.php */
+#navBar{height: 60px;width: 1000px;margin: 0 auto;z-index: 200}
+#navLogo{height: 44px;width: 219px;background: url(../css/images/logo_2.png);margin-top: 8px;margin-right: 100px;float: left;}
+.navButton{height: 29px;width: 103px;margin-top:15px;margin-right: 30px;float: left;display: block;z-index: 210}
+
+/* elements of wrapper */
+#wContent{height: auto;min-height: 660px;width: 720px;position: relative;margin: 0 auto;clear: both;}
+#wRight p{font-size:12px;color:#808080;line-height:20px;font-family:"Î¢ÈíÑÅºÚ","ºÚÌå","ËÎÌå"}
+#wTitle{height: 90px;width: 166px;margin-left: 12px;background-color: #fff}
+/* header style for wrapper.php */
+#header{width: 100%;min-width: 1000px;height: 60px;background: #ECEBB6;position: relative;text-align: center;margin:0 auto;clear: both;}
+#content{width: 100%;min-width: 1000px;height: auto;position: relative;text-align: center;margin: 0 auto;clear: both;}
+
+.newsbody{
+	width: 720px;
+}
+
+.newsbody ul {
+	list-style: none;
+}
+
+.newsbody ul li.right{
+	width: 223px;
+	float: right;
+}
+.newsbody ul li.long{
+	width: 677px;
+	float: right;
+}
+.newsbody ul li.midium{
+	width: 424px;
+	float: right;
+}
+.newsbody ul li.pic{
+	width: 171px;
+	height: 240px;
+	float: left;
+	background-color: #ECEBB6;
+}
+.newsbody .news_block{
+	border-bottom: 1px solid #93CA9B;
+	border-right: 1px solid #93CA9B;
+	border-left: 1px solid #93CA9B;
+}
+.newsbody .news_block .news_lable{
+	text-align: center;
+	font-size: 14px;
+	height: 42px;
+	background-color: #DBE18A;
+	color: #068043;
+	margin: 0;
+	width: 100%;
+	font-weight: bold;
+	display: inline-block;
+	clear: both;
+	line-height: 42px;
+}
+
+.newsbody .news_block .news_input input{
+	width: 100%;
+	height: 36px;
+	border: 0;
+	font-size: 12px;
+	padding-left: 15px;
+	background-color: #ECEBBA;
+}
+
+.newsbody .news_titlebar{
+	border: 0;
+	padding:0;
+	margin: 0;
+	clear: both;
+}
+.newsbody .news_titlebar h2{
+	background-color: #93CA9B;
+	color: #ffffff;
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 0;
+}
+.newsbutton{
+	margin-top: 100px;
+	margin-left: 500px;
+}
