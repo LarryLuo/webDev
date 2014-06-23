@@ -24,6 +24,23 @@
 		<title>newsupdate</title>
 	</head>
 	<body style="background-color: #ECEBB6">
+		<div id="editNews">
+			<ul>
+			<?php
+				$news_sql="SELECT * FROM p_newsbase";
+				$news_qurey=mysql_query($news_sql,$conn);
+				while($news_row=mysql_fetch_array($news_qurey)){
+			?>		
+				<li>
+				</li>
+
+			<?php	
+				}
+			?>
+			</ul>
+		</div>
+
+		<div id="updateNews">
 		<table class=navi cellSpacing=1 align=center border=0>
 			<tbody>
 				<tr>
@@ -82,5 +99,6 @@
 				</tr>
 			</form>
 		</table>
+		</div>
 	</body>
 </html>

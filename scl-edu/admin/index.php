@@ -1,9 +1,10 @@
 <html>
 	<head>
 		<meta http-quiv="Content-Type" content="text/html; charset=gb2312">
-		<link rel="stylesheet" type="text/css" href="../css/layout.css">
+		<link rel="stylesheet" type="text/css" href="layout.css">
 		<script type="text/javascript" src="../css/scripts/jquery-1.11.1.min.js"></script>
-		<script type="text/javascript" src="../ckeditor/ckeditor.js">
+		<script type="text/javascript" src="../ckeditor/ckeditor.js"></script>
+		<script>
 			function resize(){
 				var cHeight = $("#wRight").height() + 'px';
 				document.getElementById("wContent").style.height = cHeight;
@@ -23,10 +24,10 @@
 				<a href="index.php?sid=2">editNews</a>
 			</div>
 			<div class="navButton">
-				<a href="index.php?sid=3">updateMedia</a>
+				<a href="index.php?sid=3">editMedia</a>
 			</div>
 			<div class="navButton">
-				<a href="index.php?sid=4">editMedia</a>
+				<a href="index.php?sid=4">editVideo</a>
 			</div>
 		</div>
 	</div>
@@ -49,7 +50,7 @@
 							break;
 
 						case '4':
-							include 'editMedia.php';
+							include 'updateVideo.php';
 							break;
 
 						default:

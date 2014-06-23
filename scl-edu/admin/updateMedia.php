@@ -1,7 +1,59 @@
+<script language=javascript>
+	function CheckPost()
+	{
+		if(mediaUpload.title.value=="")
+		{
+			alert("enter title!");
+			mediaUpload.title.focus();
+			return false;
+		}
+	}
+	function Del(id){
+		if(confirm('you really del it?')){
+			window.location.href="?sid=3&action=" + id;
+ 		}
+	}
+</script>
 
 
-<?php
-	include 'resize.class.php';
+
+
+<html>
+	<body style="background-color: #ECEBB6">
+		<?php 
+			include 'conn.php';
+			if(isset($_GET['action'])){
+ 				$del_sql="DELETE FROM `p_media` WHERE `id`='{$_GET['action']}'";
+ 				mysql_query($del_sql)or die("finish"); 
+			}
+		?>
+		<div id="picArea">
+		<?php
+			$pic_sql="SELECT * FROM p_media";
+			$pic_query=mysql_query($pic_sql,$conn);
+			while ($pic_row=mysql_fetch_array($pic_query)) {
+		?>
+		<div class="picBlock">
+			<img src="../<?=$pic_row[url]?>">
+			<div class="picDel"><a href="#" onclick="Del(<?=$pic_row[id]?>)">del</a></div>
+		</div>
+		<?php } ?>
+		<div id="update" style="float:left;margin-top:20px;">
+		<form align=left name="mediaUpload" action="index.php?sid=3" method="post" enctype="multipart/form-data">
+			<label for="file">uploadFile:</label>
+			<input type="file" name="file" id="file" />
+			</br>
+			<label for="url">ImageTitle:</label>
+			<input type="text" name="title" id="title" size="100"/>
+			</br>
+			<input type="submit" name="submit" value="Submit" />
+		</form>
+
+
+		</div>
+		<div id="info" style="float:left;width:100%">
+			<?php
+
 
 	if((($_FILES["file"]["type"] == "image/jpeg")
 		||($_FILES["file"]["type"] == "image/gif")
@@ -30,56 +82,25 @@
 
 
 				echo "Store in: " . "css/media/" . $_FILES["file"]["name"];
-
-				$resizeimage=new resizeimage('../css/media/'. $_FILES["file"]["name"],128,95,1,'../css/media/sample/sample_'.$_FILES["file"]["name"]);
-				
-				echo "Store in" . "css/media/sample/sample_" .$_FILES["file"]["name"]; 
 			}
 
 			include 'conn.php';
 			$filename=$_FILES["file"]["name"];
-			$url=$_POST['url'];
+			$title=$_POST['title'];
 
-			if(isset($_POST['submit'])&& $_POST['submit']){
+			if(isset($_POST[submit])){
 				$sql="INSERT INTO p_media (id,title,sample,url)".
-				"VALUE('','$filename','css/media/sample/sample_$filename','css/media/$filename')";
+				"VALUE('','$title','css/media/sample/sample_$filename','css/media/$filename')";
 				mysql_query($sql,$conn);
 			}
 		}
 	}
 	else
 	{
-		echo "Invalid file";
 		echo $_FILES["file"]["error"];
 	}
 ?>
-
-
-<script language=javascript>
-	function CheckPost()
-	{
-		if(mediaUpload.url.value=="")
-		{
-			alert("enter url!");
-			mediaUpload.url.focus();
-			return false;
-		}
-	}
-</script>
-
-
-
-
-<html>
-	<body style="background-color: #ECEBB6">
-		<form align=left name="mediaUpload" action="index.php?sid=3" method="post" enctype="multipart/form-data">
-			<label for="file">Filename:</label>
-			<input type="file" name="file" id="file" />
-			</br>
-			<label for="url">ImageTag:</label>
-			<input type="text" name="url" id="url" size="100"/>
-			</br>
-			<input type="submit" name="submit" value="Submit" />
-		</form>
+		</div>
+	</div>
 	</body>
 </html>
