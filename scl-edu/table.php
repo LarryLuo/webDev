@@ -1,34 +1,5 @@
-<?php
-	include 'admin/conn.php';
-	$kidsinfo_sql="INSERT INTO `p_kidsinfo` (`id`,`name`,`ename`,`age`,`sex`,`nation`,`health`,`address`,`phone`,`pname`,`pic`)"."VALUES (NULL,'$_POST[kids_name]','$_POST[kids_ename]','$_POST[kids_age]','$_POST[kids_sex]','$_POST[kids_nation]','$_POST[kids_health]','$_POST[kids_address]','$_POST[kids_phone]','$_POST[kids_pname]','css/kids/$filename')";
-
-	if(isset($_POST[kids_sub])){
-
-
-	if((($_FILES["file"]["type"] == "image/gif")
-		||($_FILES["file"]["type"] == "image/jpeg")
-		||($_FILES["file"]["type"] == "image/pjpeg"))
-		&&($_FILES["file"]["size"] < 2000000)){
-			if($_FILES["file"]["error"] > 0){
-			}else{
-				if(file_exists("css/kids/" . $_FILES["file"]["name"])){
-					echo "<script>alert(' faild!! ');</script>";
-				}else{
-					echo "<script> alert(' success!! '); </script>";
-					move_uploaded_file($_FILES["file"]["tmp_name"],"css/kids/" . $_FILES["file"]["name"]);
-					$filename=$_FILES["file"]["name"];
-					mysql_query($kidsinfo_sql);
-				}
-			}
-	}
-	else{
-		echo "<script>alert(' faild!! ');</script>";
-	}
-	}
-?>
-
 <script language=javascript>
-	function CheckPost()
+	function checkpost()
 	{
 		if(kids_info.kids_name.value==""){
 			alert("enter name!");
@@ -78,15 +49,7 @@
 	}
 </script>
 
-<html>
-	<head>
-		<meta http-quiv="Content-Type" content="text/html; charset=gb2312">
-		<link rel="stylesheet" type="text/css" href="css/forms.css">
-		<script type="text/javascript" src="css/scripts/jquery-1.11.1.min.js"></script>
-		<title>table</title>
-	</head>
-	<body>
-		<form action="wrapper.php?mid=4&sid=12&pageno=1" method="post" enctype="multipart/form-data" name="kids_info" onsubmit="return CheckPost();">
+		<form action="wrapper.php?mid=4&sid=12&pageno=1" method="post" enctype="multipart/form-data" name="kids_info" onsubmit="return checkpost();">
 			<div class="kidsbody">
 			<ul>
 				<li id="k_info" class="kids_titlebar">
@@ -181,19 +144,39 @@
 						<input class="medium" name="kids_pname" type="text">
 					</div>
 				</li>
-
 			</ul>
-
-
 			</div>
-			<div class="kidsbutton">
-				<input type="image" src="http://yh.tiebeike.com/wp-content/uploads/2013/08/form_submit.png" name="kids_sub" id="kids_sub" value="submit">
-			</div>
+			<input type="submit" name="submit" value="Submit" style="float:right;height:50px;width:100px;background:#93CA9B;color:#fff;font-weight:bord;font-size:16px;margin-top:30px;" />
 		</form>
-	</body>
-</html>
+<?php
+	if((($_FILES["file"]["type"] == "image/jpeg")
+		||($_FILES["file"]["type"] == "image/gif")
+		||($_FILES["file"]["type"] == "image/pjpeg"))
+		&&($_FILES["file"]["size"] < 200000000))
+	{
+		if($_FILES["file"]["error"] > 0)
+		{
+			echo "<script type='text/javascript'>alert('upload faild! please check your file');</script>";
+		}
+		else
+		{
 
+			if(file_exists("css/kids/" . $_FILES["file"]["name"])){
+			}
+			else
+			{	
+				move_uploaded_file($_FILES["file"]["tmp_name"],"css/kids/" . $_FILES["file"]["name"]);
+			}
 
+			include 'conn.php';
+			$filename=$_FILES["file"]["name"];
 
-
+			if(isset($_POST[submit])){
+				$kidsinfo_sql="INSERT INTO `p_kidsinfo` (`id`,`name`,`ename`,`age`,`sex`,`nation`,`health`,`address`,`phone`,`pname`,`pic`)"."VALUES (NULL,'$_POST[kids_name]','$_POST[kids_ename]','$_POST[kids_age]','$_POST[kids_sex]','$_POST[kids_nation]','$_POST[kids_health]','$_POST[kids_address]','$_POST[kids_phone]','$_POST[kids_pname]','css/kids/$filename')";
+				mysql_query($kidsinfo_sql,$conn);
+				echo "<script type='text/javascript'>alert('upload success!');</script>";
+			}
+		}
+	}
+?>
 

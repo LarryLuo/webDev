@@ -3,6 +3,7 @@
 	<head>
 		<meta http-quiv="Content-Type" content="text/html; charset=gb2312">
 		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<link rel="stylesheet" type="text/css" href="css/forms.css">
 		<script type="text/javascript" src="css/scripts/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="css/scripts/jquery.mousewheel.min.js"></script>
 		<script type="text/javascript" src="css/scripts/whell.js"></script>

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta http-quiv="Content-Type" content="text/html; charset=gb2312">

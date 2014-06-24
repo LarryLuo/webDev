@@ -6,33 +6,39 @@
 */
 .kidsbody{
 	width: 720px;
+	float: left;
+	background-color: #ECEBB6;
 }
 
 .kidsbody ul {
 	list-style: none;
+	padding: 0;
+	margin: 0;
+	height: auto;
 }
 
 .kidsbody ul li.right{
-	width: 250px;
+	width: 33%;
 	float: right;
 }
 .kidsbody ul li.long{
-	width: 677px;
+	width: 99%;
 	float: right;
 }
 .kidsbody ul li.midium{
-	width: 424px;
+	width: 66%;
 	float: right;
 }
 .kidsbody ul li.pic{
-	width: 173px;
-	height: 234px;
+	width: 32%;
+	height: 240px;
 	float: left;
 	background-color: #ECEBB6;
 }
 .kidsbody .kids_block{
 	border-bottom: 3px solid #DBE18A;
 	border-right: 3px solid #DBE18A;
+	float: right;
 }
 .kidsbody .kids_block .kids_lable{
 	text-align: center;
@@ -49,7 +55,7 @@
 }
 
 .kidsbody .kids_block .kids_input input{
-	width: 100%;
+	width: 80%;
 	height: 36px;
 	border: 0;
 	font-size: 12px;

@@ -1,8 +1,13 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta http-quiv="Content-Type" content="text/html; charset=gb2312">
-		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<link rel="stylesheet" tyep="text/css" href="UberGallery-v2.4.6/resources/UberGallery.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="css/forms.css"/>
+		<link rel="stylesheet" type="text/css" href="UberGallery-v2.4.6/resources/colorbox/1/colorbox.css"/>
 		<script type="text/javascript" src="css/scripts/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="UberGallery-v2.4.6/resources/colorbox/jquery.colorbox.js"></script>
 		<script type="text/javascript">
 			function Page_jump(str){
 				window.location = "http://www.cdcaf.com/scl-edu/wrapper.php?"+str;
@@ -13,6 +18,11 @@
 				var cHeight = $("#wRight").height() + 'px';
 				document.getElementById("wContent").style.height = cHeight;
 			}
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+		    $("a[rel='colorbox']").colorbox({maxWidth: "90%", maxHeight: "90%", opacity: ".5"});
+			});
 		</script>
 		<title>scl-edu</title>
 	</head>
@@ -131,10 +141,16 @@
 							echo "</div>";
 					
 						}elseif($sid==8){
-							
+							include 'images.php';
 
 						}elseif($sid==12){
 							include 'table.php';
+
+						}elseif($sid==13){
+							include 'table2.php';
+
+						}elseif($sid==10){
+							include 'videos.php';
 
 						}else{
 							/* nid !=7, echo the content detail by sid */

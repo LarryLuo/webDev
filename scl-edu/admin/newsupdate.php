@@ -1,6 +1,13 @@
-<?php
+<?php 
 	include 'conn.php';
-
+	if(isset($_GET['action'])){
+ 		$del_sql="DELETE FROM `p_newsbase` WHERE `id`='{$_GET['action']}'";
+ 		mysql_query($del_sql)or die("finish"); 
+ 		$del_sql2="DELETE FROM `p_newscontent` WHERE `nid`='{$_GET['action']}'";
+ 		mysql_query($del_sql2)or die("finish");
+	}
+?>
+<?php
 	if(isset($_POST[into_news])){
 		$base_sql="INSERT INTO `p_newsbase` (`id`,`cid`,`title`,`author`,`date_time`,`brief`)" . 
 			"VALUES (NULL,'$_POST[cid]','$_POST[title]','$_POST[author]',now(),substring('$_POST[newscontent]', 1,20))";
@@ -11,18 +18,14 @@
 		mysql_query($content_sql);
 	}
 ?>
+<script language=javascript>
+	function Del(id){
+		if(confirm('you really del it?')){
+			window.location.href="?sid=1&action=" + id;
+ 		}
+	}
+</script>
 
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtmm">
-	<head>
-		<meta charset="gb2312"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="../css/layout.css">
-		<script src="../ckeditor/ckeditor.js"></script>
-		<title>newsupdate</title>
-	</head>
 	<body style="background-color: #ECEBB6">
 		<div id="editNews">
 			<ul>
@@ -31,9 +34,14 @@
 				$news_qurey=mysql_query($news_sql,$conn);
 				while($news_row=mysql_fetch_array($news_qurey)){
 			?>		
-				<li>
+				<li>	
+					<a href="wrapper.php?sid=5&mid=2&nid=<?=$news_row['id']?>">
+						<?=$news_row['title']?>
+					</a>
+					<span style="float:right">
+						<a href="#" onclick="Del(<?=$news_row[id]?>)">del</a>
+					</span>
 				</li>
-
 			<?php	
 				}
 			?>
@@ -101,4 +109,3 @@
 		</table>
 		</div>
 	</body>
-</html>

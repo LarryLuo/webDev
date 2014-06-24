@@ -17,8 +17,8 @@
 
 
 
-
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtmm">
 	<body style="background-color: #ECEBB6">
 		<?php 
 			include 'conn.php';
@@ -35,7 +35,7 @@
 		?>
 		<div class="picBlock">
 			<img src="../<?=$pic_row[url]?>">
-			<div class="picDel"><a href="#" onclick="Del(<?=$pic_row[id]?>)">del</a></div>
+			<div class="picDel"><a href="#" style="font-size:12px;" onclick="Del(<?=$pic_row[id]?>)">del</a></div>
 		</div>
 		<?php } ?>
 		<div id="update" style="float:left;margin-top:20px;">
@@ -52,9 +52,7 @@
 
 		</div>
 		<div id="info" style="float:left;width:100%">
-			<?php
-
-
+<?php
 	if((($_FILES["file"]["type"] == "image/jpeg")
 		||($_FILES["file"]["type"] == "image/gif")
 		||($_FILES["file"]["type"] == "image/pjpeg"))
