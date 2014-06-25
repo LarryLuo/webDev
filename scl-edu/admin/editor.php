@@ -29,11 +29,22 @@
 					if ($row[sid]<7) {
 				
 			?>
-				<li>	
-					<a href="../wrapper.php?sid=<?=$row[sid]?>">
-						title
-					</a>
-				</li>
+					
+					<?php
+						if ($row[sid]==1) {
+					?>
+						<li>
+							<a href="../wrapper.php?sid=<?=$row[sid]?>">
+								content1
+							</a>
+						</li>			
+					<?php	} ?>
+
+
+
+
+
+				
 			<?php	
 					}	
 				}

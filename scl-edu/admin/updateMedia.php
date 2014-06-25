@@ -15,11 +15,8 @@
 	}
 </script>
 
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtmm">
-	<body style="background-color: #ECEBB6">
+ 
+	<body >
 		<?php 
 			include 'conn.php';
 			if(isset($_GET['action'])){
@@ -35,18 +32,18 @@
 		?>
 		<div class="picBlock">
 			<img src="../<?=$pic_row[url]?>">
-			<div class="picDel"><a href="#" style="font-size:12px;" onclick="Del(<?=$pic_row[id]?>)">del</a></div>
+			<div class="picDel"><a href="#" style="font-size:12px;" onclick="Del(<?=$pic_row[id]?>)">删</a></div>
 		</div>
 		<?php } ?>
 		<div id="update" style="float:left;margin-top:20px;">
 		<form align=left name="mediaUpload" action="index.php?sid=3" method="post" enctype="multipart/form-data">
-			<label for="file">uploadFile:</label>
+			<label for="file">上传图片:</label>
 			<input type="file" name="file" id="file" />
 			</br>
-			<label for="url">ImageTitle:</label>
+			<label for="url">图片标题:</label>
 			<input type="text" name="title" id="title" size="100"/>
 			</br>
-			<input type="submit" name="submit" value="Submit" />
+			<input type="submit" name="submit" value="上传" />
 		</form>
 
 
@@ -101,4 +98,3 @@
 		</div>
 	</div>
 	</body>
-</html>

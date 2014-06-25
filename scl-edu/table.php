@@ -17,7 +17,7 @@
 			return false;
 		}
 		if(kids_info.kids_nation.value==""){
-			alert("请输入孩子国际 please input nation");
+			alert("请输入孩子国籍 please input nation");
 			kids_info.kids_nation.focus();
 			return false;
 		}
@@ -98,7 +98,7 @@
 
 				<li id="k_nation" class="kids_block right">
 					<label class="kids_lable" for="kids_nation">
-						幼儿国际 Nationality
+						幼儿国籍 Nationality
 					</label>
 					<div class="kids_input">
 						<input class="medium" name="kids_nation" type="text">

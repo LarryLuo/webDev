@@ -19,7 +19,7 @@
 
 
 <html>
-	<body style="background-color: #ECEBB6">
+	<body>
 		<?php 
 			include 'conn.php';
 			if(isset($_GET['action'])){
@@ -35,18 +35,18 @@
 		?>
 		<div class="vidBlock">
 			<div class="vidScreen"><?=$vid_row[url]?></div>
-			<div class="vidDel"><a href="#" onclick="Del(<?=$vid_row[id]?>)">del</a></div>
+			<div class="vidDel"><a href="#" onclick="Del(<?=$vid_row[id]?>)">删除</a></div>
 		</div>
 		<?php } ?>
 		<div id="update" style="float:left;margin-top:20px;">
 		<form align=left name="updateVideo" action="index.php?sid=4" method="post" enctype="multipart/form-data">
-			<label for="title">VideoTitle:</label>
+			<label for="title">视频标题:</label>
 			<input type="text" name="title" id="title" size="80"/>
 			</br>
-			<label for="url">VideoUrl:</label>
+			<label for="url">视频连接:</label>
 			<input type="text" name="url" id="url" size="80">
 			</br>
-			<input type="submit" name="submit" value="Submit" />
+			<input type="submit" name="submit" value="提交" />
 		</form>
 
 		</div>

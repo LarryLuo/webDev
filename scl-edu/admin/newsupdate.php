@@ -26,7 +26,7 @@
 	}
 </script>
 
-	<body style="background-color: #ECEBB6">
+	<body>
 		<div id="editNews">
 			<ul>
 			<?php
@@ -39,7 +39,7 @@
 						<?=$news_row['title']?>
 					</a>
 					<span style="float:right">
-						<a href="#" onclick="Del(<?=$news_row[id]?>)">del</a>
+						<a href="#" onclick="Del(<?=$news_row[id]?>)">删除</a>
 					</span>
 				</li>
 			<?php	
@@ -48,19 +48,11 @@
 			</ul>
 		</div>
 
-		<div id="updateNews">
-		<table class=navi cellSpacing=1 align=center border=0>
-			<tbody>
-				<tr>
-					<h2>add news</h2>
-				</tr>
-			</tbody>
-		</table>
-		</br>
-		<table border=0 cellSpacing=1 align=center class=form>
+		<div id="updateNews" style="margin-top:40px;">
+		<table border=0 cellSpacing=1 align=left class=form>
 			<form action="index.php?sid=1" method="post" >
 				<tr>
-					<td width=80>news title</td>
+					<td width=80>新闻标题</td>
 					<td>
 						<input type="text" name="title" size=40>
 						</select>
@@ -68,21 +60,21 @@
 				</tr>
 
 				<tr>
-					<td width=80>news author</td>
+					<td width=80>新闻作者</td>
 					<td>
 						<input type="text" name="author" size=40>
 					</td>
 				</tr>
 
 				<tr>
-					<td width=80>key words</td>
+					<td width=80>关键字</td>
 					<td>
 						<input type="text" name="keyword" size=40>
 					</td>
 				</tr>
 
 				<tr>
-					<td width=80>text content</td>
+					<td width=80>新闻内容</td>
 					<td>
 						<textarea class="ckeditor" name="newscontent" rows="10" cols="30">
 						</textarea>
@@ -102,7 +94,7 @@
 				<tr>
 					<td width=80></td>
 					<td>
-						<input type="submit" name="into_news" style="height:30px;" value="add news">
+						<input type="submit" name="into_news" style="height:30px;" value="添加新闻">
 					</td>
 				</tr>
 			</form>

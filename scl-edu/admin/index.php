@@ -1,3 +1,14 @@
+<?php
+session_start();
+$lifeTime = 120;   
+setcookie(session_name(), session_id(), time() + $lifeTime, "/"); 
+
+if(empty($_SESSION['username'])){
+ header("Location: login.php?errno=3");
+ exit();
+}
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -17,18 +28,20 @@
 	<body onload="resize()">
 	<div id="header">
 		<div id="navBar">
-			<div id="navLogo"><a href="index.php"><div style="width:219px;height:44px"></div></a></div>
 			<div class="navButton">
-				<a href="index.php?sid=1">updateNews</a>
+				<a href="index.php?sid=1">编辑新闻</a>
 			</div>
 			<div class="navButton">
-				<a href="index.php?sid=2">editContents</a>
+				<a href="index.php?sid=3">编辑图片</a>
 			</div>
 			<div class="navButton">
-				<a href="index.php?sid=3">editMedia</a>
+				<a href="index.php?sid=4">编辑视频</a>
 			</div>
 			<div class="navButton">
-				<a href="index.php?sid=4">editVideo</a>
+				<a href="index.php?sid=5">幼儿信息</a>
+			</div>
+			<div class="navButton">
+				<a href="index.php?sid=6">招聘信息</a>
 			</div>
 		</div>
 	</div>
@@ -42,10 +55,6 @@
 							include 'newsupdate.php';
 							break;
 
-						case '2':
-							include 'editor.php';
-							break;
-
 						case '3':
 							include 'updateMedia.php';
 							break;
@@ -54,8 +63,16 @@
 							include 'updateVideo.php';
 							break;
 
+						case '5':
+							include 'infos.php';
+							break;
+
+						case '6':
+							include 'zpinfo.php';
+							break;
+
 						default:
-							echo "<p>please click above</p>";
+							echo "<p>请点击上方按钮</p>";
 							break;
 					}
 				?>
