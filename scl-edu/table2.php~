@@ -177,7 +177,7 @@
 	if(isset($_POST[submit])){
 	$zp_sql="INSERT INTO `p_zp` (`id`,`name`,`sex`,`age`,`major`,`education`,`pc`,`english`,`teaching`,`pos`,`address`,`phone`,`intro`)"."VALUES (NULL,'$_POST[zp_name]','$_POST[zp_sex]','$_POST[zp_age]','$_POST[zp_major]','$_POST[zp_education]','$_POST[zp_pc]','$_POST[zp_english]','$_POST[zp_teaching]','$_POST[zp_pos]','$_POST[zp_address]','$_POST[zp_phone]','$_POST[zp_intro]')";
 	mysql_query($zp_sql,$conn);
-	echo "<script type='text/javascript'>alert('提交成功');</script>";
+	echo "<script type='text/javascript'>alert('upload success!');</script>";
 	}
 ?>
 

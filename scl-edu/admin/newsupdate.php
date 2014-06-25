@@ -35,7 +35,7 @@
 				while($news_row=mysql_fetch_array($news_qurey)){
 			?>		
 				<li>	
-					<a href="wrapper.php?sid=5&mid=2&nid=<?=$news_row['id']?>">
+					<a href="../wrapper.php?sid=5&mid=2&nid=<?=$news_row['id']?>">
 						<?=$news_row['title']?>
 					</a>
 					<span style="float:right">

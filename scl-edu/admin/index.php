@@ -22,7 +22,7 @@
 				<a href="index.php?sid=1">updateNews</a>
 			</div>
 			<div class="navButton">
-				<a href="index.php?sid=2">editNews</a>
+				<a href="index.php?sid=2">editContents</a>
 			</div>
 			<div class="navButton">
 				<a href="index.php?sid=3">editMedia</a>
@@ -43,7 +43,7 @@
 							break;
 
 						case '2':
-							include 'editNews.php';
+							include 'editor.php';
 							break;
 
 						case '3':

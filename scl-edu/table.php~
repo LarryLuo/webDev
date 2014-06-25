@@ -146,7 +146,7 @@
 				</li>
 			</ul>
 			</div>
-			<input type="submit" name="submit" value="Ìá½»" style="float:right;height:50px;width:100px;background:#93CA9B;color:#fff;font-weight:bord;font-size:16px;margin-top:30px;" />
+			<input type="submit" name="submit" value="Submit" style="float:right;height:50px;width:100px;background:#93CA9B;color:#fff;font-weight:bord;font-size:16px;margin-top:30px;" />
 		</form>
 <?php
 	if((($_FILES["file"]["type"] == "image/jpeg")

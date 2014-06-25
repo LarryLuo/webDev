@@ -20,18 +20,26 @@
 		}
 	}
 </script>
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtmm">
-	<head>
-		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-		<meta charset="gb2312"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="../ckeditor/ckeditor.js"></script>
-		<title>contentupdate</title>
-	</head>
-	<body>
+		<div id="contentsList">
+			<ul>
+			<?php
+				$contents_sql="SELECT * FROM p_content";
+				$contents_query=mysql_query($contents_sql,$conn);
+				while($row=mysql_fetch_array($contents_query)){
+					if ($row[sid]<7) {
+				
+			?>
+				<li>	
+					<a href="../wrapper.php?sid=<?=$row[sid]?>">
+						title
+					</a>
+				</li>
+			<?php	
+					}	
+				}
+			?>
+			</ul>
+		</div>
 		<table class=navi cellSpacing=1 align=center border=0>
 			<tbody>
 				<tr>
@@ -53,12 +61,12 @@
 
 
 				<tr>
-					<td>text content</td>
+					<td>text contents</td>
 					<td>
-						<textarea class="ckeditor" name="content" rows="10" cols="60">
+						<textarea class="ckeditor" name="contents" rows="10" cols="60">
 						</textarea>
 						<script>
-							CKEDITOR.replace('content',{
+							CKEDITOR.replace('contents',{
 								filebrowserBrowseUrl:'../ckfinder/ckfinder.html',
 								filebrowserImageBrowseUrl:'../ckfinder/ckfinder.html?Type=Images',
 								filebrowserFlashBrowseUrl:'../ckfinder/ckfinder.html?Tyep=Flash',
@@ -78,8 +86,3 @@
 				</tr>
 			</form>
 		</table>
-	</body>
-
-
-
-</html>
